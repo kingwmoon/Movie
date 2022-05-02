@@ -1,0 +1,14 @@
+introduction
+data-sources
+data-transformation
+part-1
+part2-boxoffice-data
+missing-values
+missing-values-for-imdb_rating-data
+missing-plot-for-boxoffice-data
+results
+library
+read-data
+relationship-between
+interactive-component
+conclusion
