@@ -1,6 +1,6 @@
 # Interactive component
 
-
+## parcoods
 ```{r}
 library(parcoords)
 library(lubridate)
@@ -26,5 +26,5 @@ parcoords(box1, rownames = FALSE,
             height = 600)
 ```
 
-
+## d3
 

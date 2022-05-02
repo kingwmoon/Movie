@@ -12,3 +12,5 @@ read-data
 relationship-between
 interactive-component
 conclusion
+parcoods
+d3
