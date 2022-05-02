@@ -1,1 +1,161 @@
 # Results
+
+## library
+```{r}
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+library(parcoords)
+library(redav)
+library(GGally)
+library(plotly)
+```
+
+## read data
+```{r}
+imdb_movie<-read_csv("data/imdb_movie.csv")
+boxo<-read_csv("data/imdb_Top800Movie_data.csv")
+box1721<-read_csv("data/imdb_20172021boxoffice_data.csv")
+yearlybox<-read_csv("data/imdb_yearlyboxoffice.csv")
+```
+
+## relationship between
+
+```{r}
+yearlybox%>%
+  ggplot(aes(x=Year,y=Total))+
+    geom_line()+  
+  annotate("rect",xmin=2019,xmax=2020,ymin =2103088090 ,ymax = 11320803442,alpha = .3)+
+  annotate("text",x=2019,y =1500000000,label='2019-2020')+
+  labs(x="Date(Year-Month)",
+       title="Time Series of overall Boxoffice")
+```
+
+```{r}
+top10<-imdb_movie%>%drop_na(startYear,g1)%>%group_by(g1)%>%summarise(count=n())%>%arrange(desc(count))%>%head(6)%>%pull(g1)
+imdb_year_g<-imdb_movie%>%drop_na(startYear,g1)%>%filter(g1 %in% top10)%>%group_by(startYear,g1)%>%summarise(count=n())
+imdb_year_g%>%
+  ggplot(aes(x=startYear,y=count,group=g1,color=g1))+
+  #geom_point()+
+  geom_line()+ 
+  #facet_wrap(~g1,scales = "free_y")+
+  scale_x_date(limits = c(ymd("2000-12-31"), ymd("2021-12-31"))) +
+  ggtitle("limits = c(ymd(\"2016-12-31\"), ymd(\"2021-12-31\"))")
+
+```
+
+```{r}
+imdb_movie%>%drop_na(averageRating)%>%
+  mutate(star=cut(averageRating, breaks = c(0, 2, 4,8,10),levels = 1:5, right = FALSE))%>%
+  drop_na(star)%>%
+  group_by(startYear,star)%>%
+  summarise(count=n())%>%
+  ggplot(aes(x=startYear,y=count))+
+  geom_point()+
+  geom_line()+ 
+  facet_wrap(~star,scales = "free_y")+
+  scale_x_date(limits = c(ymd("2000-12-31"), ymd("2021-12-31"))) +
+  ggtitle("limits = c(ymd(\"2000-12-31\"), ymd(\"2021-12-31\"))")
+```
+
+```{r}
+(imdb_averate_g_1<-imdb_movie%>%drop_na(g1,averageRating)%>%select(primaryTitle,averageRating,g1)%>%group_by(g1)%>%summarise(count_gen=n(),gen_ave=sum(averageRating)/count_gen))
+imdb_averate_g_1%>%
+  ggplot(aes(x=gen_ave,y=fct_reorder(g1, gen_ave)))+
+  geom_point() +
+  xlab("average score for different genres") +
+  ylab("") +
+  theme_linedraw() 
+```
+
+
+```{r}
+imdb_mosaic_pre<-imdb_movie%>% 
+   pivot_longer(cols = c("g1","g2","g3"),
+               values_to = "genres",
+               names_to = "type")%>%
+   drop_na(genres,startYear)
+imdb_mosaic<-imdb_mosaic_pre%>%group_by(startYear,genres)%>%summarise(Freq=n())
+top7<-imdb_mosaic_pre%>%group_by(genres)%>%summarise(Freq=n())%>%arrange(desc(Freq))%>%head(7)%>%pull(genres)
+imdb_mos<-imdb_mosaic%>%
+  filter(startYear %in% c(ymd("1990-01-01","1995-01-01","2000-01-01","2005-01-01","2010-01-01","2015-01-01")),genres %in% top7)
+vcd::mosaic(genres~startYear,imdb_mos,direction = c("v", "h"),rot_labels=c(30,0))
+```
+
+```{r}
+imdb_timeg<-imdb_mosaic_pre%>%drop_na(runtimeMinutes)%>%mutate(timele=cut(runtimeMinutes, breaks = c(0, 60, 120,300),levels = 1:3, right = FALSE))
+
+top10<-imdb_timeg%>%group_by(genres)%>%summarise(n=n())%>%arrange(desc(n))%>%head(10)%>%pull(genres)
+imdb_timeg1<-imdb_timeg%>%filter(genres %in% top10)%>%select(genres,timele)%>%group_by(genres,timele)%>%summarise(Freq=n())
+vcd::mosaic(timele ~ genres,imdb_timeg1,direction = c("v", "h"),rot_labels=c(45,0))
+```
+```{r}
+newct1 <- xtabs(Freq ~ genres+startYear, imdb_mos)
+(X1test <- chisq.test(newct1, correct = FALSE))
+newct2 <- xtabs(Freq ~ genres+timele, imdb_timeg1)
+(X2test <- chisq.test(newct2, correct = FALSE))
+```
+
+```{r}
+box1721_new<-box1721%>%drop_na(g1,startYear)%>%pivot_longer(
+  cols = c("g1","g2","g3"),
+  values_to = "genres",
+  names_to = "type"
+)
+box1721_new2<-box1721_new%>%drop_na(genres)%>%
+group_by(startYear,genres)%>%
+summarise(averagegross=sum(Total)/n())%>%filter(startYear>ymd("2016-01-01"))
+box1721_new2%>%
+    ggplot(aes(startYear,genres))+
+  geom_tile(aes(fill=averagegross))
+```
+```{r}
+box1<-box1721_new%>%drop_na(genres,startYear)%>%group_by(startYear,genres)%>%summarise(averagegross=sum(Total)/n())%>%filter(startYear>ymd("2016-01-01"))%>%pivot_wider(
+  values_from = averagegross,
+  names_from = startYear
+)
+parcoords(box1, rownames = FALSE,
+            brushMode = "1D-axes",
+            alpha = 0.5,
+            withD3 = TRUE,
+            width = 900,
+            height = 600)
+```
+
+```{r}
+
+boxo_norm<-boxo[,c(2,10,14,15,16,17,18)]%>%drop_na()%>%head(200)
+boxo_norm%>%
+  ggparcoord(columns = 2:6,scale = "uniminmax")
+```
+
+
+```{r}
+
+boxo_norm<-boxo[,c(2,10,14,15,16,17,18)]%>%drop_na()
+
+pca_Data<-boxo_norm
+draw_biplot(pca_Data)
+
+pca<-boxo_norm[,-1]%>%
+  prcomp(scale.=TRUE)
+biplot(pca,cex=0.5)
+pca
+```
+
+```{r}
+box1721_1<-subset(box1721,box1721$Total < 500000000)
+ggplot(na.omit(box1721_1), aes(y = reorder(g1,-Total, median), x = Total)) + 
+  # plotting
+  geom_boxplot(fill = "lightBlue", color = "#473e2c") + 
+  # formatting
+  ggtitle("Boxplots of total box office by type of movies") +
+  labs(x = "Type", y = " Total box office (2017-2021)") +
+  theme_grey(16) +
+  theme(plot.title = element_text(face = "bold"))  +
+  theme(plot.caption = element_text(color = "grey68"))
+```
+
+
+
+

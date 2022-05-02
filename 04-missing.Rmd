@@ -1,1 +1,25 @@
 # Missing values
+
+## Missing values for imdb_rating data
+```{r}
+library(tidyverse)
+imdb_movie<-read_csv("data/imdb_movie.csv")
+library(redav)
+plot_missing(imdb_movie)
+plot_missing(imdb_movie[,3:9])
+```
+```{r}
+imdb_movie
+```
+
+## missing plot for boxoffice data
+```{r}
+boxo<-read_csv("data/imdb_Top800Movie_data.csv")
+plot_missing(boxo)
+
+box1721<-read_csv("data/imdb_20172021boxoffice_data.csv")
+plot_missing(box1721)
+
+```
+
+

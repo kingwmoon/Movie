@@ -1,1 +1,64 @@
 # Data transformation
+
+## part 1 
+```{r}
+library(tidyverse)
+imdb_movie<-read_csv("data/imdb_movie.csv")
+```
+
+
+## part2 boxoffice data
+```{r}
+library(tidyverse)
+library(rvest)
+library(robotstxt)
+
+paths_allowed("https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW")
+Yearly_boxoffice<-read_html("https://www.boxofficemojo.com/year/?ref_=bo_nb_di_secondarytab") %>% html_table()
+Top200 <- read_html("https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW") %>% html_table()
+Top400<- read_html("https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW&offset=200") %>% html_table()
+Top600<-read_html("https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW&offset=400") %>% html_table()
+Top800<-read_html("https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW&offset=600") %>% html_table()
+top800movie<-bind_rows(Top200,Top400)%>%bind_rows(Top600)%>%bind_rows(Top800)
+
+boxo<-left_join(top800movie,imdb_movie,by=c("Title" = "primaryTitle"))%>%
+  group_by(Title)%>%
+  slice_max(n = 1, order_by =numVotes)%>%
+  arrange((Rank))%>%
+  mutate(Total=as.numeric(gsub('[$,]','',`Worldwide Lifetime Gross`)),
+         Domestic=as.numeric(gsub('[$,]','',`Domestic Lifetime Gross`)),
+         Foreign=as.numeric(gsub('[$,]','',`Foreign Lifetime Gross`)))%>%
+  select(-`Worldwide Lifetime Gross`,-`Foreign Lifetime Gross`,-`Domestic Lifetime Gross`,-Year)
+
+write_csv(boxo,"data/imdb_Top800Movie_data.csv")
+```
+
+
+```{r}
+#nearby 5 years boxoffice data
+start=2017
+end=2020
+boxall=read_html("https://www.boxofficemojo.com/year/world/2021/") %>% html_table()
+for (i in start:end){
+  url=paste("https://www.boxofficemojo.com/year/world/",i,"/",sep="")
+  boxnow<-read_html(url) %>% html_table()
+  boxall<-bind_rows(boxall,boxnow)}
+box1721<-boxall%>%left_join(imdb_movie,by=c("Release Group" = "primaryTitle"))%>%
+  group_by(`Release Group`)%>%
+  slice_max(n = 1, order_by =numVotes)%>%
+  select(-Rank)%>%
+  mutate(Total=as.numeric(gsub('[$,]','',`Worldwide`)),
+         Domestic=as.numeric(gsub('[$,]','',`Domestic`)),
+         Foreign=as.numeric(gsub('[$,]','',`Foreign`)))%>%
+  select(-`Worldwide`,-`Foreign`,-`Domestic`)%>%
+  arrange(desc(Total))
+write_csv(box1721,"data/imdb_20172021boxoffice_data.csv")
+```
+
+```{r}
+Yearly_boxoffice<-read_html("https://www.boxofficemojo.com/year/?ref_=bo_nb_di_secondarytab") %>% html_table()
+Yearly_boxoffice<-Yearly_boxoffice%>%as.data.frame()%>%filter(Year!=2022)%>%mutate(Total=as.numeric(gsub('[$,()]','',`Total.Gross`)),Average=as.numeric(gsub('[$,]','',Average)))%>%select(-`Total.Gross`)
+write_csv(Yearly_boxoffice,"data/imdb_yearlyboxoffice.csv")
+```
+
+
