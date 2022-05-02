@@ -46,7 +46,7 @@ imdb_year_g%>%
 
 ```{r}
 imdb_movie%>%drop_na(averageRating)%>%
-  mutate(star=cut(averageRating, breaks = c(0, 2, 4,8,10),levels = 1:5, right = FALSE))%>%
+  mutate(star=cut(averageRating, breaks = c(0, 2, 4,6,8,10),levels = 1:5, right = FALSE))%>%
   drop_na(star)%>%
   group_by(startYear,star)%>%
   summarise(count=n())%>%
