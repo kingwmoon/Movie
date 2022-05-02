@@ -124,7 +124,7 @@ parcoords(box1, rownames = FALSE,
 
 ```{r}
 
-boxo_norm<-boxo[,c(2,10,14,15,16,17,18)]%>%drop_na()%>%head(200)
+boxo_norm<-boxo[,c(2,7,11,12,13,14)]%>%drop_na()%>%head(200)
 boxo_norm%>%
   ggparcoord(columns = 2:6,scale = "uniminmax")
 ```
@@ -132,7 +132,7 @@ boxo_norm%>%
 
 ```{r}
 
-boxo_norm<-boxo[,c(2,10,14,15,16,17,18)]%>%drop_na()
+boxo_norm<-boxo[,c(2,7,11,12,13,14)]%>%drop_na()
 
 pca_Data<-boxo_norm
 draw_biplot(pca_Data)
