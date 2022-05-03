@@ -22,14 +22,14 @@ separate(col=genres,into=c("g1","g2","g3"),sep = ",")
 imdb_movie$startYear<-readr::parse_date(imdb_movie$startYear,format="%Y")
 write_csv(imdb_movie,"data/imdb_movie.csv")
 ```
-The cleaning imdb_movie data are in data folder.
+
+The cleaning imdb_movie data are in data folder.Here we only read the cleaned data.
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE,echo=TRUE)
 ```
 
 ```{r}
-
 library(tidyverse)
 imdb_movie<-read_csv("data/imdb_movie.csv")
 ```
@@ -39,19 +39,22 @@ imdb_movie<-read_csv("data/imdb_movie.csv")
 ### Cleaning Top800 Boxoffice data
 
 ```{r}
-
 library(tidyverse)
 library(rvest)
 library(robotstxt)
 
+## Seperately read the movie information in each page.
 paths_allowed("https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW")
 Yearly_boxoffice<-read_html("https://www.boxofficemojo.com/year/?ref_=bo_nb_di_secondarytab") %>% html_table()
 Top200 <- read_html("https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW") %>% html_table()
 Top400<- read_html("https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW&offset=200") %>% html_table()
 Top600<-read_html("https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW&offset=400") %>% html_table()
 Top800<-read_html("https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW&offset=600") %>% html_table()
+
+#Combine them together
 top800movie<-bind_rows(Top200,Top400)%>%bind_rows(Top600)%>%bind_rows(Top800)
 
+#Combine the boxoffice information with basic information like title and rating
 boxo<-left_join(top800movie,imdb_movie,by=c("Title" = "primaryTitle"))%>%
   group_by(Title)%>%
   slice_max(n = 1, order_by =numVotes)%>%
@@ -61,6 +64,7 @@ boxo<-left_join(top800movie,imdb_movie,by=c("Title" = "primaryTitle"))%>%
          Foreign=as.numeric(gsub('[$,]','',`Foreign Lifetime Gross`)))%>%
   select(-`Worldwide Lifetime Gross`,-`Foreign Lifetime Gross`,-`Domestic Lifetime Gross`,-Year)
 
+#Save the data for following usuage.
 write_csv(boxo,"data/imdb_Top800Movie_data.csv")
 ```
 
@@ -75,6 +79,8 @@ for (i in start:end){
   url=paste("https://www.boxofficemojo.com/year/world/",i,"/",sep="")
   boxnow<-read_html(url) %>% html_table()
   boxall<-bind_rows(boxall,boxnow)}
+
+# combine 5 years data with basic rating information.
 box1721<-boxall%>%left_join(imdb_movie,by=c("Release Group" = "primaryTitle"))%>%
   group_by(`Release Group`)%>%
   slice_max(n = 1, order_by =numVotes)%>%
