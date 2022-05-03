@@ -1,9 +1,10 @@
 --- 
 title: "Movie Analysis"
-author: "Haoyue Wang"
+author: "Haoyue Wang & Yanhao Ren"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
 # Introduction
 
+The project theme we chose is the film industry. We choose this topic for two reasons, first of all because our group's two classmates all like watching movies, the second point is that the subject is the life, because almost everyone has seen the movie, so our analysis Angle can be more diversified, and the analysis results and image shows more and more people. I want to further explore the relationship between various variables in the film industry, such as the relationship between the release year of different types of films and the total number of films, the relationship between the number of films and film scores, the relationship between film box office and film types, and the different performance of film box office in different years. At the same time, we also analyzed the impact of the epidemic on the film industry.
