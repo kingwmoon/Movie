@@ -206,7 +206,7 @@ ggplot(na.omit(box1721_1), aes(y = reorder(g1,-Total, median), x = Total)) +
   geom_boxplot(fill = "lightBlue", color = "#473e2c") + 
   # formatting
   ggtitle("Boxplots of total box office by type of movies") +
-  labs(x = "Type", y = " Total box office (2017-2021)") +
+  labs(x = " Total box office (2017-2021)", y = "Genres") +
   theme_grey(16) +
   theme(plot.title = element_text(face = "bold"))  +
   theme(plot.caption = element_text(color = "grey68"))
