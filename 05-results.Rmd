@@ -1,7 +1,11 @@
 # Results
 
+```{r, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE,echo=FALSE)
+```
+
 ## library
-```{r}
+```{r,echo=TRUE}
 library(bookdown)
 library(tidyverse)
 library(lubridate)
@@ -13,7 +17,7 @@ library(plotly)
 ```
 
 ## Read data
-```{r}
+```{r,echo=TRUE}
 imdb_movie<-read_csv("data/imdb_movie.csv")
 boxo<-read_csv("data/imdb_Top800Movie_data.csv")
 box1721<-read_csv("data/imdb_20172021boxoffice_data.csv")
@@ -35,8 +39,6 @@ yearlybox%>%
 Explanation of the graph:
  
 Here, we want to explore the box office trends for each year from 1980 to 2021. As can be seen from the plot, the box office grew steadily from 1980 to 2020, but fell off a cliff in 2020, which may also be due to the impact of the epidemic on the film industry. Fewer films, fewer moviegoers and a large number of theater closures were among the main reasons for the decline. We can also see that the box office in 2020 dropped to the level of 1980, which shows that the epidemic has a huge impact on the film industry. 
-
-
 
 
 ```{r}
