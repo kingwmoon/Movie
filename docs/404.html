@@ -20,7 +20,7 @@
   
   
 
-<meta name="author" content="Haoyue Wang" />
+<meta name="author" content="Haoyue Wang &amp; Yanhao Ren" />
 
 
 <meta name="date" content="2022-05-03" />
@@ -52,6 +52,10 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="libs/parallel-coordinates-2.1.8/parcoords.css" rel="stylesheet" />
+<script src="libs/parcoords-binding-1.0.0/parcoords.js"></script>
+<script src="libs/d3-5.16.0/d3.min.js"></script>
 
 
 
@@ -81,7 +85,7 @@
 </ul></li>
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation<span></span></a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="data-transformation.html"><a href="data-transformation.html#combining-rating-data-from-imdbdatasets"><i class="fa fa-check"></i><b>3.1</b> combining rating data from imdbdatasets<span></span></a></li>
+<li class="chapter" data-level="3.1" data-path="data-transformation.html"><a href="data-transformation.html#combining-rating-data-from-imdbdatasets"><i class="fa fa-check"></i><b>3.1</b> Combining rating data from imdbdatasets<span></span></a></li>
 <li class="chapter" data-level="3.2" data-path="data-transformation.html"><a href="data-transformation.html#cleaning-boxoffice-data"><i class="fa fa-check"></i><b>3.2</b> Cleaning boxoffice data<span></span></a>
 <ul>
 <li class="chapter" data-level="3.2.1" data-path="data-transformation.html"><a href="data-transformation.html#cleaning-top800-boxoffice-data"><i class="fa fa-check"></i><b>3.2.1</b> Cleaning Top800 Boxoffice data<span></span></a></li>
@@ -98,11 +102,24 @@
 <ul>
 <li class="chapter" data-level="5.1" data-path="results.html"><a href="results.html#library"><i class="fa fa-check"></i><b>5.1</b> library<span></span></a></li>
 <li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#read-data"><i class="fa fa-check"></i><b>5.2</b> Read data<span></span></a></li>
-<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#relationship-between"><i class="fa fa-check"></i><b>5.3</b> Relationship between<span></span></a></li>
+<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#graphs"><i class="fa fa-check"></i><b>5.3</b> Graphs：<span></span></a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="results.html"><a href="results.html#time-series1"><i class="fa fa-check"></i><b>5.3.1</b> Time Series(1):<span></span></a></li>
+<li class="chapter" data-level="5.3.2" data-path="results.html"><a href="results.html#time-series2"><i class="fa fa-check"></i><b>5.3.2</b> Time series(2):<span></span></a></li>
+<li class="chapter" data-level="5.3.3" data-path="results.html"><a href="results.html#line-plot"><i class="fa fa-check"></i><b>5.3.3</b> Line plot：<span></span></a></li>
+<li class="chapter" data-level="5.3.4" data-path="results.html"><a href="results.html#cleveland-plot"><i class="fa fa-check"></i><b>5.3.4</b> Cleveland plot：<span></span></a></li>
+<li class="chapter" data-level="5.3.5" data-path="results.html"><a href="results.html#mosiac-plot1"><i class="fa fa-check"></i><b>5.3.5</b> Mosiac plot(1)：<span></span></a></li>
+<li class="chapter" data-level="5.3.6" data-path="results.html"><a href="results.html#mosaic-plot2"><i class="fa fa-check"></i><b>5.3.6</b> Mosaic plot(2):<span></span></a></li>
+<li class="chapter" data-level="5.3.7" data-path="results.html"><a href="results.html#chi-square-test"><i class="fa fa-check"></i><b>5.3.7</b> Chi-square test:<span></span></a></li>
+<li class="chapter" data-level="5.3.8" data-path="results.html"><a href="results.html#heatmap"><i class="fa fa-check"></i><b>5.3.8</b> Heatmap:<span></span></a></li>
+<li class="chapter" data-level="5.3.9" data-path="results.html"><a href="results.html#parallel-coordinal-plot"><i class="fa fa-check"></i><b>5.3.9</b> Parallel coordinal plot:<span></span></a></li>
+<li class="chapter" data-level="5.3.10" data-path="results.html"><a href="results.html#boxplot"><i class="fa fa-check"></i><b>5.3.10</b> Boxplot:<span></span></a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component<span></span></a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="interactive-component.html"><a href="interactive-component.html#top10-rating-movie-information-in-2019-and-2020"><i class="fa fa-check"></i><b>6.1</b> Top10 rating movie information in 2019 and 2020<span></span></a></li>
+<li class="chapter" data-level="6.1" data-path="interactive-component.html"><a href="interactive-component.html#parcoods"><i class="fa fa-check"></i><b>6.1</b> parcoods<span></span></a></li>
+<li class="chapter" data-level="6.2" data-path="interactive-component.html"><a href="interactive-component.html#top10-rating-movie-information-in-2019-and-2020"><i class="fa fa-check"></i><b>6.2</b> Top10 rating movie information in 2019 and 2020<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion<span></span></a></li>
 <li class="divider"></li>

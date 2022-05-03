@@ -35,3 +35,14 @@ getting-the-yearly-boxoffice-data.
 missing-values-for-movie-basic-datatitlename-runtime-genres-and-rating
 missing-plot-for-box-office-data
 top10-rating-movie-information-in-2019-and-2020
+graphs
+time-series1
+time-series2
+line-plot
+cleveland-plot
+mosiac-plot1
+mosaic-plot2
+chi-square-test
+heatmap
+parallel-coordinal-plot
+boxplot
