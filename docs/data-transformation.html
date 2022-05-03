@@ -23,7 +23,7 @@
 <meta name="author" content="Haoyue Wang" />
 
 
-<meta name="date" content="2022-05-02" />
+<meta name="date" content="2022-05-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,6 +54,70 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -73,24 +137,38 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a></li>
-<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources<span></span></a></li>
+<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources<span></span></a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#describe-the-data"><i class="fa fa-check"></i><b>2.1</b> Describe the data:<span></span></a></li>
+<li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#basic-information"><i class="fa fa-check"></i><b>2.2</b> Basic information:<span></span></a></li>
+<li class="chapter" data-level="2.3" data-path="data-sources.html"><a href="data-sources.html#problems-with-the-data"><i class="fa fa-check"></i><b>2.3</b> Problems with the data:<span></span></a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation<span></span></a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="data-transformation.html"><a href="data-transformation.html#part-1"><i class="fa fa-check"></i><b>3.1</b> part 1<span></span></a></li>
-<li class="chapter" data-level="3.2" data-path="data-transformation.html"><a href="data-transformation.html#part2-boxoffice-data"><i class="fa fa-check"></i><b>3.2</b> part2 boxoffice data<span></span></a></li>
+<li class="chapter" data-level="3.1" data-path="data-transformation.html"><a href="data-transformation.html#combining-rating-data-from-imdbdatasets"><i class="fa fa-check"></i><b>3.1</b> combining rating data from imdbdatasets<span></span></a></li>
+<li class="chapter" data-level="3.2" data-path="data-transformation.html"><a href="data-transformation.html#cleaning-boxoffice-data"><i class="fa fa-check"></i><b>3.2</b> Cleaning boxoffice data<span></span></a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="data-transformation.html"><a href="data-transformation.html#cleaning-top800-boxoffice-data"><i class="fa fa-check"></i><b>3.2.1</b> Cleaning Top800 Boxoffice data<span></span></a></li>
+<li class="chapter" data-level="3.2.2" data-path="data-transformation.html"><a href="data-transformation.html#cleaning-nearby-5-years-boxoffice-data"><i class="fa fa-check"></i><b>3.2.2</b> Cleaning nearby 5 years Boxoffice data<span></span></a></li>
+<li class="chapter" data-level="3.2.3" data-path="data-transformation.html"><a href="data-transformation.html#getting-the-yearly-boxoffice-data."><i class="fa fa-check"></i><b>3.2.3</b> Getting the yearly Boxoffice data.<span></span></a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values<span></span></a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#missing-values-for-imdb_rating-data"><i class="fa fa-check"></i><b>4.1</b> Missing values for imdb_rating data<span></span></a></li>
-<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#missing-plot-for-boxoffice-data"><i class="fa fa-check"></i><b>4.2</b> missing plot for boxoffice data<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#missing-plot-for-boxoffice-data"><i class="fa fa-check"></i><b>4.2</b> Missing plot for boxoffice data<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results<span></span></a>
 <ul>
 <li class="chapter" data-level="5.1" data-path="results.html"><a href="results.html#library"><i class="fa fa-check"></i><b>5.1</b> library<span></span></a></li>
-<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#read-data"><i class="fa fa-check"></i><b>5.2</b> read data<span></span></a></li>
-<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#relationship-between"><i class="fa fa-check"></i><b>5.3</b> relationship between<span></span></a></li>
+<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#read-data"><i class="fa fa-check"></i><b>5.2</b> Read data<span></span></a></li>
+<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#relationship-between"><i class="fa fa-check"></i><b>5.3</b> Relationship between<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component<span></span></a></li>
+<li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component<span></span></a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="interactive-component.html"><a href="interactive-component.html#parcoods"><i class="fa fa-check"></i><b>6.1</b> parcoods<span></span></a></li>
+<li class="chapter" data-level="6.2" data-path="interactive-component.html"><a href="interactive-component.html#d3"><i class="fa fa-check"></i><b>6.2</b> d3<span></span></a></li>
+</ul></li>
 <li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion<span></span></a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -113,13 +191,84 @@
             <section class="normal" id="section-">
 <div id="data-transformation" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Data transformation<a href="data-transformation.html#data-transformation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="part-1" class="section level2 hasAnchor" number="3.1">
-<h2><span class="header-section-number">3.1</span> part 1<a href="data-transformation.html#part-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Since we have different data from both <a href="https://datasets.imdbws.com" class="uri">https://datasets.imdbws.com</a>(prvided tsv) and <a href="https://www.boxofficemojo.com/" class="uri">https://www.boxofficemojo.com/</a>(web scraping). There are some limits.</p>
+<div id="combining-rating-data-from-imdbdatasets" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> combining rating data from imdbdatasets<a href="data-transformation.html#combining-rating-data-from-imdbdatasets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>First of all we downloaded the title.basic.tsv.gz and title.rating.tsv.gz and read them by read_tsv()(the data are larger than the Storage limits in Github, Thus we didnot show the process of cleaning it here.)
+the code is as follow</p>
+<pre><code>imdb_rank&lt;-read_tsv(&quot;title.ratings.tsv&quot;)
+head(imdb_rank)
+imdb_basic&lt;-read_tsv(&quot;title.basics.tsv&quot;)
+head(imdb_basic)
+imdb_movie&lt;-imdb_basic%&gt;%
+filter(titleType==&quot;movie&quot;)%&gt;%
+left_join(imdb_rank)%&gt;%
+na_if(&quot;\\N&quot;)%&gt;%
+select(-`endYear`,-titleType,-originalTitle,-isAdult)%&gt;%
+mutate(runtimeMinutes=as.integer(runtimeMinutes))%&gt;%
+separate(col=genres,into=c(&quot;g1&quot;,&quot;g2&quot;,&quot;g3&quot;),sep = &quot;,&quot;)
+imdb_movie$startYear&lt;-readr::parse_date(imdb_movie$startYear,format=&quot;%Y&quot;)
+write_csv(imdb_movie,&quot;data/imdb_movie.csv&quot;)</code></pre>
+<p>The cleaning imdb_movie data are in data folder.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="data-transformation.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="data-transformation.html#cb2-2" aria-hidden="true" tabindex="-1"></a>imdb_movie<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">&quot;data/imdb_movie.csv&quot;</span>)</span></code></pre></div>
 </div>
-<div id="part2-boxoffice-data" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> part2 boxoffice data<a href="data-transformation.html#part2-boxoffice-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="cleaning-boxoffice-data" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Cleaning boxoffice data<a href="data-transformation.html#cleaning-boxoffice-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="cleaning-top800-boxoffice-data" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Cleaning Top800 Boxoffice data<a href="data-transformation.html#cleaning-top800-boxoffice-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="data-transformation.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-2"><a href="data-transformation.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span>
+<span id="cb3-3"><a href="data-transformation.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(robotstxt)</span>
+<span id="cb3-4"><a href="data-transformation.html#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="data-transformation.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">paths_allowed</span>(<span class="st">&quot;https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW&quot;</span>)</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="data-transformation.html#cb5-1" aria-hidden="true" tabindex="-1"></a>Yearly_boxoffice<span class="ot">&lt;-</span><span class="fu">read_html</span>(<span class="st">&quot;https://www.boxofficemojo.com/year/?ref_=bo_nb_di_secondarytab&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_table</span>()</span>
+<span id="cb5-2"><a href="data-transformation.html#cb5-2" aria-hidden="true" tabindex="-1"></a>Top200 <span class="ot">&lt;-</span> <span class="fu">read_html</span>(<span class="st">&quot;https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_table</span>()</span>
+<span id="cb5-3"><a href="data-transformation.html#cb5-3" aria-hidden="true" tabindex="-1"></a>Top400<span class="ot">&lt;-</span> <span class="fu">read_html</span>(<span class="st">&quot;https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW&amp;offset=200&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_table</span>()</span>
+<span id="cb5-4"><a href="data-transformation.html#cb5-4" aria-hidden="true" tabindex="-1"></a>Top600<span class="ot">&lt;-</span><span class="fu">read_html</span>(<span class="st">&quot;https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW&amp;offset=400&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_table</span>()</span>
+<span id="cb5-5"><a href="data-transformation.html#cb5-5" aria-hidden="true" tabindex="-1"></a>Top800<span class="ot">&lt;-</span><span class="fu">read_html</span>(<span class="st">&quot;https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/?area=XWW&amp;offset=600&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_table</span>()</span>
+<span id="cb5-6"><a href="data-transformation.html#cb5-6" aria-hidden="true" tabindex="-1"></a>top800movie<span class="ot">&lt;-</span><span class="fu">bind_rows</span>(Top200,Top400)<span class="sc">%&gt;%</span><span class="fu">bind_rows</span>(Top600)<span class="sc">%&gt;%</span><span class="fu">bind_rows</span>(Top800)</span>
+<span id="cb5-7"><a href="data-transformation.html#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="data-transformation.html#cb5-8" aria-hidden="true" tabindex="-1"></a>boxo<span class="ot">&lt;-</span><span class="fu">left_join</span>(top800movie,imdb_movie,<span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;Title&quot;</span> <span class="ot">=</span> <span class="st">&quot;primaryTitle&quot;</span>))<span class="sc">%&gt;%</span></span>
+<span id="cb5-9"><a href="data-transformation.html#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Title)<span class="sc">%&gt;%</span></span>
+<span id="cb5-10"><a href="data-transformation.html#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_max</span>(<span class="at">n =</span> <span class="dv">1</span>, <span class="at">order_by =</span>numVotes)<span class="sc">%&gt;%</span></span>
+<span id="cb5-11"><a href="data-transformation.html#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>((Rank))<span class="sc">%&gt;%</span></span>
+<span id="cb5-12"><a href="data-transformation.html#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Total=</span><span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">&#39;[$,]&#39;</span>,<span class="st">&#39;&#39;</span>,<span class="st">`</span><span class="at">Worldwide Lifetime Gross</span><span class="st">`</span>)),</span>
+<span id="cb5-13"><a href="data-transformation.html#cb5-13" aria-hidden="true" tabindex="-1"></a>         <span class="at">Domestic=</span><span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">&#39;[$,]&#39;</span>,<span class="st">&#39;&#39;</span>,<span class="st">`</span><span class="at">Domestic Lifetime Gross</span><span class="st">`</span>)),</span>
+<span id="cb5-14"><a href="data-transformation.html#cb5-14" aria-hidden="true" tabindex="-1"></a>         <span class="at">Foreign=</span><span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">&#39;[$,]&#39;</span>,<span class="st">&#39;&#39;</span>,<span class="st">`</span><span class="at">Foreign Lifetime Gross</span><span class="st">`</span>)))<span class="sc">%&gt;%</span></span>
+<span id="cb5-15"><a href="data-transformation.html#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="st">`</span><span class="at">Worldwide Lifetime Gross</span><span class="st">`</span>,<span class="sc">-</span><span class="st">`</span><span class="at">Foreign Lifetime Gross</span><span class="st">`</span>,<span class="sc">-</span><span class="st">`</span><span class="at">Domestic Lifetime Gross</span><span class="st">`</span>,<span class="sc">-</span>Year)</span>
+<span id="cb5-16"><a href="data-transformation.html#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="data-transformation.html#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(boxo,<span class="st">&quot;data/imdb_Top800Movie_data.csv&quot;</span>)</span></code></pre></div>
+</div>
+<div id="cleaning-nearby-5-years-boxoffice-data" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Cleaning nearby 5 years Boxoffice data<a href="data-transformation.html#cleaning-nearby-5-years-boxoffice-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="data-transformation.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#nearby 5 years boxoffice data</span></span>
+<span id="cb6-2"><a href="data-transformation.html#cb6-2" aria-hidden="true" tabindex="-1"></a>start<span class="ot">=</span><span class="dv">2017</span></span>
+<span id="cb6-3"><a href="data-transformation.html#cb6-3" aria-hidden="true" tabindex="-1"></a>end<span class="ot">=</span><span class="dv">2020</span></span>
+<span id="cb6-4"><a href="data-transformation.html#cb6-4" aria-hidden="true" tabindex="-1"></a>boxall<span class="ot">=</span><span class="fu">read_html</span>(<span class="st">&quot;https://www.boxofficemojo.com/year/world/2021/&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_table</span>()</span>
+<span id="cb6-5"><a href="data-transformation.html#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> start<span class="sc">:</span>end){</span>
+<span id="cb6-6"><a href="data-transformation.html#cb6-6" aria-hidden="true" tabindex="-1"></a>  url<span class="ot">=</span><span class="fu">paste</span>(<span class="st">&quot;https://www.boxofficemojo.com/year/world/&quot;</span>,i,<span class="st">&quot;/&quot;</span>,<span class="at">sep=</span><span class="st">&quot;&quot;</span>)</span>
+<span id="cb6-7"><a href="data-transformation.html#cb6-7" aria-hidden="true" tabindex="-1"></a>  boxnow<span class="ot">&lt;-</span><span class="fu">read_html</span>(url) <span class="sc">%&gt;%</span> <span class="fu">html_table</span>()</span>
+<span id="cb6-8"><a href="data-transformation.html#cb6-8" aria-hidden="true" tabindex="-1"></a>  boxall<span class="ot">&lt;-</span><span class="fu">bind_rows</span>(boxall,boxnow)}</span>
+<span id="cb6-9"><a href="data-transformation.html#cb6-9" aria-hidden="true" tabindex="-1"></a>box1721<span class="ot">&lt;-</span>boxall<span class="sc">%&gt;%</span><span class="fu">left_join</span>(imdb_movie,<span class="at">by=</span><span class="fu">c</span>(<span class="st">&quot;Release Group&quot;</span> <span class="ot">=</span> <span class="st">&quot;primaryTitle&quot;</span>))<span class="sc">%&gt;%</span></span>
+<span id="cb6-10"><a href="data-transformation.html#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(<span class="st">`</span><span class="at">Release Group</span><span class="st">`</span>)<span class="sc">%&gt;%</span></span>
+<span id="cb6-11"><a href="data-transformation.html#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_max</span>(<span class="at">n =</span> <span class="dv">1</span>, <span class="at">order_by =</span>numVotes)<span class="sc">%&gt;%</span></span>
+<span id="cb6-12"><a href="data-transformation.html#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>Rank)<span class="sc">%&gt;%</span></span>
+<span id="cb6-13"><a href="data-transformation.html#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Total=</span><span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">&#39;[$,]&#39;</span>,<span class="st">&#39;&#39;</span>,<span class="st">`</span><span class="at">Worldwide</span><span class="st">`</span>)),</span>
+<span id="cb6-14"><a href="data-transformation.html#cb6-14" aria-hidden="true" tabindex="-1"></a>         <span class="at">Domestic=</span><span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">&#39;[$,]&#39;</span>,<span class="st">&#39;&#39;</span>,<span class="st">`</span><span class="at">Domestic</span><span class="st">`</span>)),</span>
+<span id="cb6-15"><a href="data-transformation.html#cb6-15" aria-hidden="true" tabindex="-1"></a>         <span class="at">Foreign=</span><span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">&#39;[$,]&#39;</span>,<span class="st">&#39;&#39;</span>,<span class="st">`</span><span class="at">Foreign</span><span class="st">`</span>)))<span class="sc">%&gt;%</span></span>
+<span id="cb6-16"><a href="data-transformation.html#cb6-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="st">`</span><span class="at">Worldwide</span><span class="st">`</span>,<span class="sc">-</span><span class="st">`</span><span class="at">Foreign</span><span class="st">`</span>,<span class="sc">-</span><span class="st">`</span><span class="at">Domestic</span><span class="st">`</span>)<span class="sc">%&gt;%</span></span>
+<span id="cb6-17"><a href="data-transformation.html#cb6-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(Total))</span>
+<span id="cb6-18"><a href="data-transformation.html#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(box1721,<span class="st">&quot;data/imdb_20172021boxoffice_data.csv&quot;</span>)</span></code></pre></div>
+</div>
+<div id="getting-the-yearly-boxoffice-data." class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Getting the yearly Boxoffice data.<a href="data-transformation.html#getting-the-yearly-boxoffice-data." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="data-transformation.html#cb7-1" aria-hidden="true" tabindex="-1"></a>Yearly_boxoffice<span class="ot">&lt;-</span><span class="fu">read_html</span>(<span class="st">&quot;https://www.boxofficemojo.com/year/?ref_=bo_nb_di_secondarytab&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">html_table</span>()</span>
+<span id="cb7-2"><a href="data-transformation.html#cb7-2" aria-hidden="true" tabindex="-1"></a>Yearly_boxoffice<span class="ot">&lt;-</span>Yearly_boxoffice<span class="sc">%&gt;%</span><span class="fu">as.data.frame</span>()<span class="sc">%&gt;%</span><span class="fu">filter</span>(Year<span class="sc">!=</span><span class="dv">2022</span>)<span class="sc">%&gt;%</span><span class="fu">mutate</span>(<span class="at">Total=</span><span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">&#39;[$,()]&#39;</span>,<span class="st">&#39;&#39;</span>,<span class="st">`</span><span class="at">Total.Gross</span><span class="st">`</span>)),<span class="at">Average=</span><span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">&#39;[$,]&#39;</span>,<span class="st">&#39;&#39;</span>,Average)))<span class="sc">%&gt;%</span><span class="fu">select</span>(<span class="sc">-</span><span class="st">`</span><span class="at">Total.Gross</span><span class="st">`</span>)</span>
+<span id="cb7-3"><a href="data-transformation.html#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">write_csv</span>(Yearly_boxoffice,<span class="st">&quot;data/imdb_yearlyboxoffice.csv&quot;</span>)</span></code></pre></div>
 
+</div>
 </div>
 </div>
             </section>

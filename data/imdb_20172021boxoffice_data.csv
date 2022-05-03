@@ -1,7 +1,7 @@
 Release Group,%...5,%...7,tconst,startYear,runtimeMinutes,g1,g2,g3,averageRating,numVotes,Total
 Avengers: Endgame,30.7%,69.3%,tt4154796,2019-01-01,181,Action,Adventure,Drama,8.4,1033089,2797501328
 Avengers: Infinity War,33.1%,66.9%,tt4154756,2018-01-01,149,Action,Adventure,Sci-Fi,8.5,998241,2048359754
-Spider-Man: No Way Home,42.5%,57.5%,tt10872600,2021-01-01,148,Action,Adventure,Fantasy,8.5,564567,1892416709
+Spider-Man: No Way Home,42.5%,57.5%,tt10872600,2021-01-01,148,Action,Adventure,Fantasy,8.5,564567,1892570726
 The Lion King,32.8%,67.2%,tt0110357,1994-01-01,88,Adventure,Animation,Drama,8.5,1017294,1656943394
 Frozen II,32.9%,67.1%,tt4520988,2019-01-01,103,Adventure,Animation,Comedy,6.8,162951,1450026933
 Black Panther,52%,48%,tt1825683,2018-01-01,134,Action,Adventure,Sci-Fi,7.3,714215,1346913161
@@ -77,7 +77,7 @@ Bad Boys for Life,48.4%,51.6%,tt1502397,2020-01-01,124,Action,Comedy,Crime,6.5,1
 The Captain,0.2%,99.8%,tt6763252,2017-01-01,118,Drama,History,Thriller,7.3,17190,417282021
 Kingsman: The Golden Circle,24.4%,75.6%,tt4649466,2017-01-01,141,Action,Adventure,Comedy,6.7,314487,410902662
 The Mummy,19.6%,80.4%,tt0120616,1999-01-01,124,Action,Adventure,Fantasy,7.1,417390,409231607
-Sing 2,40.1%,59.9%,tt6467266,2021-01-01,110,Adventure,Animation,Comedy,7.5,41393,406009840
+Sing 2,40.1%,59.9%,tt6467266,2021-01-01,110,Adventure,Animation,Comedy,7.5,41393,406024390
 Alita: Battle Angel,21.2%,78.8%,tt0437086,2019-01-01,122,Action,Adventure,Sci-Fi,7.3,257262,404980543
 Eternals,41%,59%,tt9032400,2021-01-01,156,Action,Adventure,Fantasy,6.4,282531,402064899
 Dune,27%,73%,tt1160419,2021-01-01,155,Action,Adventure,Drama,8.1,530333,400671789
@@ -129,7 +129,7 @@ Pegasus,-,100%,tt9597190,2019-01-01,98,Comedy,Sport,NA,6.3,1732,255863112
 Halloween,62.4%,37.6%,tt0077651,1978-01-01,91,Horror,Thriller,NA,7.7,264424,255485178
 Get Out,68.9%,31.1%,tt5052448,2017-01-01,104,Horror,Mystery,Thriller,7.7,555644,255407969
 Us,68.6%,31.4%,tt6857112,2019-01-01,116,Horror,Mystery,Thriller,6.8,272063,255184580
-Encanto,37.7%,62.3%,tt2953050,2021-01-01,102,Animation,Comedy,Family,7.3,176499,254636109
+Encanto,37.7%,62.3%,tt2953050,2021-01-01,102,Animation,Comedy,Family,7.3,176499,255101005
 Baahubali 2: The Conclusion,7.9%,92.1%,tt4849438,2017-01-01,167,Action,Drama,NA,8.3,87732,254158390
 Men in Black: International,31.5%,68.5%,tt2283336,2019-01-01,114,Action,Adventure,Comedy,5.6,129168,253890701
 X-Men: Dark Phoenix,26.1%,73.9%,tt6565702,2019-01-01,113,Action,Adventure,Sci-Fi,5.7,178846,252442974
@@ -171,7 +171,7 @@ Chinese Doctors,-,100%,tt13696296,2021-01-01,129,Drama,NA,NA,4.6,423,197143218
 The Shape of Water,32.7%,67.3%,tt5580390,2017-01-01,123,Drama,Fantasy,Romance,7.3,406767,195333312
 Rocketman,49.3%,50.7%,tt2066051,2019-01-01,121,Biography,Drama,Musical,7.3,167731,195320400
 Weathering with You,4.2%,95.8%,tt9426210,2019-01-01,112,Animation,Drama,Fantasy,7.5,35775,193932489
-Downton Abbey,50%,50%,tt6398184,2019-01-01,122,Drama,Romance,NA,7.4,51435,193795496
+Downton Abbey,50%,50%,tt6398184,2019-01-01,122,Drama,Romance,NA,7.4,51435,193795226
 The Lego Movie 2: The Second Part,55%,45%,tt3513498,2019-01-01,107,Action,Adventure,Animation,6.6,63423,192306508
 Sheep Without a Shepherd,-,100%,tt11210032,2019-01-01,112,Crime,Drama,Thriller,6.8,1389,191602146
 The Equalizer 2,53.6%,46.4%,tt3766354,2018-01-01,121,Action,Crime,Thriller,6.7,153182,190400157
@@ -340,7 +340,7 @@ Sanju,10.3%,89.7%,tt6452574,2018-01-01,155,Biography,Comedy,Drama,7.8,52724,7669
 Cold Pursuit,42.1%,57.9%,tt5719748,2019-01-01,119,Action,Comedy,Crime,6.2,67224,76419755
 Vice,62.9%,37.1%,tt6266538,2018-01-01,132,Biography,Comedy,Drama,7.2,140662,76073488
 Widows,55.8%,44.2%,tt4218572,2018-01-01,129,Crime,Drama,Thriller,6.9,95451,75984700
-West Side Story,50.7%,49.3%,tt0055614,1961-01-01,153,Crime,Drama,Musical,7.6,111619,75927762
+West Side Story,50.7%,49.3%,tt0055614,1961-01-01,153,Crime,Drama,Musical,7.6,111619,75962377
 Sicario: Day of the Soldado,66%,34%,tt5052474,2018-01-01,122,Action,Adventure,Crime,7.1,142282,75837743
 A Dog's Journey,30.1%,69.9%,tt8385474,2019-01-01,109,Adventure,Comedy,Drama,7.4,23737,75741734
 Searching,34.5%,65.5%,tt7668870,2018-01-01,102,Drama,Mystery,Thriller,7.6,158220,75462037
@@ -530,7 +530,7 @@ Brotherhood of Blades 2,<0.1%,100%,tt7055592,2017-01-01,120,Action,Adventure,Dra
 The Last Wish,-,100%,tt10219674,2019-01-01,107,Drama,NA,NA,5.2,131,39756292
 Midnight Runners,-,100%,tt7056732,2017-01-01,109,Action,Comedy,Crime,7.3,6962,39730433
 Tokyo Revengers,-,100%,tt11923304,2021-01-01,120,Action,Crime,Drama,7.1,1088,39714073
-Nightmare Alley,28.6%,71.4%,tt7740496,2021-01-01,150,Crime,Drama,Thriller,7.1,100937,39613179
+Nightmare Alley,28.6%,71.4%,tt7740496,2021-01-01,150,Crime,Drama,Thriller,7.1,100937,39629195
 Intimate Strangers,-,100%,tt0363532,2004-01-01,104,Drama,Romance,Thriller,6.9,5064,39576060
 Thugs of Hindostan,3.7%,96.3%,tt5970844,2018-01-01,164,Action,Adventure,NA,4.1,19265,39570044
 Nomadland,9.4%,90.6%,tt9770150,2020-01-01,107,Drama,NA,NA,7.3,148470,39458207
@@ -748,7 +748,7 @@ Stigmatized Properties,-,100%,tt13050614,2020-01-01,111,Horror,NA,NA,4.5,187,212
 The Prison,1%,99%,tt6589464,2017-01-01,125,Action,Crime,NA,6.5,1873,21205329
 Wish Dragon,-,100%,tt5562070,2021-01-01,98,Adventure,Animation,Comedy,7.2,24097,21120000
 Pokémon the Movie: Secrets of the Jungle,-,100%,tt11819890,2020-01-01,99,Action,Adventure,Animation,6.5,1737,21097921
-Parallel Mothers,10.9%,89.1%,tt12618926,2021-01-01,123,Drama,NA,NA,7.1,20636,21088783
+Parallel Mothers,10.9%,89.1%,tt12618926,2021-01-01,123,Drama,NA,NA,7.1,20636,21089972
 The Secret Mission,-,100%,tt9602258,2019-01-01,135,Comedy,Drama,History,6.8,439,21083522
 The Photograph,99.5%,0.5%,tt7798646,2020-01-01,106,Drama,Romance,NA,6,5257,20690779
 Yarn,-,100%,tt10467054,2020-01-01,130,Romance,NA,NA,6.5,323,20474270
@@ -837,7 +837,7 @@ Let Him Go,80.5%,19.5%,tt9340860,2020-01-01,113,Crime,Drama,Thriller,6.7,24001,1
 The Hunt,50.6%,49.4%,tt2106476,2012-01-01,115,Drama,NA,NA,8.3,316990,11481750
 The Fable: The Killer Who Doesn't Kill,-,100%,tt13017204,2021-01-01,133,Action,Comedy,Mystery,6.8,1186,11325545
 What Did You Eat Yesterday?,-,100%,tt14865506,2021-01-01,120,Romance,NA,NA,8.4,70,11320893
-Aline,5.9%,94.1%,tt9735462,2020-01-01,128,Biography,Comedy,Drama,6.4,1314,11144173
+Aline,6%,94%,tt9735462,2020-01-01,128,Biography,Comedy,Drama,6.4,1314,11148310
 30 jours max,-,100%,tt11206302,2020-01-01,87,Action,Comedy,Crime,5.2,1042,10998969
 The Voice of Sin,-,100%,tt10206818,2020-01-01,142,Crime,Drama,Thriller,6.7,351,10983063
 Bigfoot Family,-,100%,tt9204164,2020-01-01,89,Adventure,Animation,Family,5.8,2622,10928721

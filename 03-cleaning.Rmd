@@ -1,14 +1,45 @@
 # Data transformation
 
-## part 1 
+
+Since we have different data from both <https://datasets.imdbws.com>(prvided tsv) and <https://www.boxofficemojo.com/>(web scraping). There are some limits.
+
+## combining rating data from imdbdatasets
+
+First of all we downloaded the title.basic.tsv.gz and title.rating.tsv.gz and read them by read_tsv()(the data are larger than the Storage limits in Github, Thus we didnot show the process of cleaning it here.)
+the code is as follow
+```
+imdb_rank<-read_tsv("title.ratings.tsv")
+head(imdb_rank)
+imdb_basic<-read_tsv("title.basics.tsv")
+head(imdb_basic)
+imdb_movie<-imdb_basic%>%
+filter(titleType=="movie")%>%
+left_join(imdb_rank)%>%
+na_if("\\N")%>%
+select(-`endYear`,-titleType,-originalTitle,-isAdult)%>%
+mutate(runtimeMinutes=as.integer(runtimeMinutes))%>%
+separate(col=genres,into=c("g1","g2","g3"),sep = ",")
+imdb_movie$startYear<-readr::parse_date(imdb_movie$startYear,format="%Y")
+write_csv(imdb_movie,"data/imdb_movie.csv")
+```
+The cleaning imdb_movie data are in data folder.
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE,echo=TRUE)
+```
+
 ```{r}
+
 library(tidyverse)
 imdb_movie<-read_csv("data/imdb_movie.csv")
 ```
 
+##  Cleaning boxoffice data
 
-## part2 boxoffice data
+### Cleaning Top800 Boxoffice data
+
 ```{r}
+
 library(tidyverse)
 library(rvest)
 library(robotstxt)
@@ -33,6 +64,7 @@ boxo<-left_join(top800movie,imdb_movie,by=c("Title" = "primaryTitle"))%>%
 write_csv(boxo,"data/imdb_Top800Movie_data.csv")
 ```
 
+### Cleaning nearby 5 years Boxoffice data
 
 ```{r}
 #nearby 5 years boxoffice data
@@ -54,6 +86,8 @@ box1721<-boxall%>%left_join(imdb_movie,by=c("Release Group" = "primaryTitle"))%>
   arrange(desc(Total))
 write_csv(box1721,"data/imdb_20172021boxoffice_data.csv")
 ```
+
+### Getting the yearly Boxoffice data.
 
 ```{r}
 Yearly_boxoffice<-read_html("https://www.boxofficemojo.com/year/?ref_=bo_nb_di_secondarytab") %>% html_table()

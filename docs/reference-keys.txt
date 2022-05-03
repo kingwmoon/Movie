@@ -25,3 +25,10 @@ explanation-of-the-graph-3
 explanation-of-the-graph-4
 explanation-of-the-graph-5
 explanation-of-the-graph-6
+part-1-combining-rating-data-from-imdbdatasets
+part2-cleaning-boxoffice-data
+cleaning-top800-boxoffice-data
+cleaning-nearby-5-years-boxoffice-data
+combining-rating-data-from-imdbdatasets
+cleaning-boxoffice-data
+getting-the-yearly-boxoffice-data.

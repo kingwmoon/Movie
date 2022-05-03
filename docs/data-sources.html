@@ -23,7 +23,7 @@
 <meta name="author" content="Haoyue Wang" />
 
 
-<meta name="date" content="2022-05-02" />
+<meta name="date" content="2022-05-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -76,22 +76,29 @@
 <li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources<span></span></a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#describe-the-data"><i class="fa fa-check"></i><b>2.1</b> Describe the data:<span></span></a></li>
+<li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#basic-information"><i class="fa fa-check"></i><b>2.2</b> Basic information:<span></span></a></li>
+<li class="chapter" data-level="2.3" data-path="data-sources.html"><a href="data-sources.html#problems-with-the-data"><i class="fa fa-check"></i><b>2.3</b> Problems with the data:<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation<span></span></a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="data-transformation.html"><a href="data-transformation.html#part-1"><i class="fa fa-check"></i><b>3.1</b> part 1<span></span></a></li>
-<li class="chapter" data-level="3.2" data-path="data-transformation.html"><a href="data-transformation.html#part2-boxoffice-data"><i class="fa fa-check"></i><b>3.2</b> part2 boxoffice data<span></span></a></li>
+<li class="chapter" data-level="3.1" data-path="data-transformation.html"><a href="data-transformation.html#combining-rating-data-from-imdbdatasets"><i class="fa fa-check"></i><b>3.1</b> combining rating data from imdbdatasets<span></span></a></li>
+<li class="chapter" data-level="3.2" data-path="data-transformation.html"><a href="data-transformation.html#cleaning-boxoffice-data"><i class="fa fa-check"></i><b>3.2</b> Cleaning boxoffice data<span></span></a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="data-transformation.html"><a href="data-transformation.html#cleaning-top800-boxoffice-data"><i class="fa fa-check"></i><b>3.2.1</b> Cleaning Top800 Boxoffice data<span></span></a></li>
+<li class="chapter" data-level="3.2.2" data-path="data-transformation.html"><a href="data-transformation.html#cleaning-nearby-5-years-boxoffice-data"><i class="fa fa-check"></i><b>3.2.2</b> Cleaning nearby 5 years Boxoffice data<span></span></a></li>
+<li class="chapter" data-level="3.2.3" data-path="data-transformation.html"><a href="data-transformation.html#getting-the-yearly-boxoffice-data."><i class="fa fa-check"></i><b>3.2.3</b> Getting the yearly Boxoffice data.<span></span></a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values<span></span></a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#missing-values-for-imdb_rating-data"><i class="fa fa-check"></i><b>4.1</b> Missing values for imdb_rating data<span></span></a></li>
-<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#missing-plot-for-boxoffice-data"><i class="fa fa-check"></i><b>4.2</b> missing plot for boxoffice data<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#missing-plot-for-boxoffice-data"><i class="fa fa-check"></i><b>4.2</b> Missing plot for boxoffice data<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results<span></span></a>
 <ul>
 <li class="chapter" data-level="5.1" data-path="results.html"><a href="results.html#library"><i class="fa fa-check"></i><b>5.1</b> library<span></span></a></li>
-<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#read-data"><i class="fa fa-check"></i><b>5.2</b> read data<span></span></a></li>
-<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#relationship-between"><i class="fa fa-check"></i><b>5.3</b> relationship between<span></span></a></li>
+<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#read-data"><i class="fa fa-check"></i><b>5.2</b> Read data<span></span></a></li>
+<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#relationship-between"><i class="fa fa-check"></i><b>5.3</b> Relationship between<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component<span></span></a>
 <ul>
@@ -122,10 +129,15 @@
 <h1><span class="header-section-number">Chapter 2</span> Data sources<a href="data-sources.html#data-sources" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="describe-the-data" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Describe the data:<a href="data-sources.html#describe-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We were both involved in the search for the data.</p>
 <p>In the process of finding data, we found that the film is easier to find the main data, such as name, category, release time, rating and so on, which could be found at <a href="https://www.imdb.com/interfaces/" class="uri">https://www.imdb.com/interfaces/</a>. But the movie box office data is more difficult to find, we tried many websites but cannot succeed, either because the box office data we found was difficult to match with the movie data we already have, or because the data on the website was not available to download. Therefore, we finally tried the method taught in the class, using ‘Rvest’ to do the web scraping. Finally, we successfully obtained the box office data we needed, and combined it with the previous one to form a more complete and comprehensive data set, which was convenient for us to conduct further analysis.</p>
-<p>Basic information: Our data set contains tens of thousands of pieces of data covering global film data from 2000 to 2020, including film title, release time, film category, film duration, lead actor, rating, total box office, etc. Later, we will focus on the period from 2018 to 2020. The reason why we choose this period is to discuss the impact of the epidemic on the film industry, which will also be part of our report.</p>
-<p>Problems with the data: Since we use ‘Rvest’ to get the movie box office data, there are many missing values of box office in our data set. Missing values will be processed in the subsequent data processing process, so as to ensure the integrity of our data set and avoid the influence of missing values on our plotting.</p>
+</div>
+<div id="basic-information" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Basic information:<a href="data-sources.html#basic-information" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Our data set contains tens of thousands of pieces of data covering global film data from 2000 to 2020, including film title, release time, film category, film duration, lead actor, rating, total box office, etc. Later, we will focus on the period from 2018 to 2020. The reason why we choose this period is to discuss the impact of the epidemic on the film industry, which will also be part of our report.</p>
+</div>
+<div id="problems-with-the-data" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Problems with the data:<a href="data-sources.html#problems-with-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Since we use ‘Rvest’ to get the movie box office data, there are many missing values of box office in our data set. Missing values will be processed in the subsequent data processing process, so as to ensure the integrity of our data set and avoid the influence of missing values on our plotting.</p>
 
 </div>
 </div>
