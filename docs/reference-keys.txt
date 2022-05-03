@@ -47,3 +47,11 @@ heatmap
 parallel-coordinal-plot
 boxplot
 top-10-rating-movies-under-the-influence-of-covid-19
+time-series-to-chase-the-trend-of-data
+total-box-office-trend
+trend-of-count-with-different-genres
+the-trend-of-counts-of-different-rating
+finding-the-top-rated-genres
+relationship-between-time-movies-length-and-genres
+explore-box-office-information
+search-for-anomalies-with-box-plot
