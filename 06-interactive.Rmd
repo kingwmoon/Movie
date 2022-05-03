@@ -28,7 +28,7 @@ parcoords(box1, rownames = FALSE,
             height = 600)
 ```
 
-## Top10 rating movie information in 2019 and 2020
+## Top 10 rating movies under the influence of Covid-19
 
 [Top10 rating movie information in 2019 and 2020](2019-2020Top10ratingdata.html){target="_blank"}
 
