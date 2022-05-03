@@ -23,7 +23,7 @@
 <meta name="author" content="Haoyue Wang" />
 
 
-<meta name="date" content="2022-05-02" />
+<meta name="date" content="2022-05-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -73,7 +73,12 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a></li>
-<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources<span></span></a></li>
+<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources<span></span></a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#describe-the-data"><i class="fa fa-check"></i><b>2.1</b> Describe the data:<span></span></a></li>
+<li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#basic-information"><i class="fa fa-check"></i><b>2.2</b> Basic information:<span></span></a></li>
+<li class="chapter" data-level="2.3" data-path="data-sources.html"><a href="data-sources.html#problems-with-the-data"><i class="fa fa-check"></i><b>2.3</b> Problems with the data:<span></span></a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation<span></span></a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="data-transformation.html"><a href="data-transformation.html#part-1"><i class="fa fa-check"></i><b>3.1</b> part 1<span></span></a></li>
@@ -82,15 +87,19 @@
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values<span></span></a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#missing-values-for-imdb_rating-data"><i class="fa fa-check"></i><b>4.1</b> Missing values for imdb_rating data<span></span></a></li>
-<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#missing-plot-for-boxoffice-data"><i class="fa fa-check"></i><b>4.2</b> missing plot for boxoffice data<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#missing-plot-for-boxoffice-data"><i class="fa fa-check"></i><b>4.2</b> Missing plot for boxoffice data<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results<span></span></a>
 <ul>
 <li class="chapter" data-level="5.1" data-path="results.html"><a href="results.html#library"><i class="fa fa-check"></i><b>5.1</b> library<span></span></a></li>
-<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#read-data"><i class="fa fa-check"></i><b>5.2</b> read data<span></span></a></li>
-<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#relationship-between"><i class="fa fa-check"></i><b>5.3</b> relationship between<span></span></a></li>
+<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#read-data"><i class="fa fa-check"></i><b>5.2</b> Read data<span></span></a></li>
+<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#relationship-between"><i class="fa fa-check"></i><b>5.3</b> Relationship between<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component<span></span></a></li>
+<li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component<span></span></a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="interactive-component.html"><a href="interactive-component.html#parcoods"><i class="fa fa-check"></i><b>6.1</b> parcoods<span></span></a></li>
+<li class="chapter" data-level="6.2" data-path="interactive-component.html"><a href="interactive-component.html#d3"><i class="fa fa-check"></i><b>6.2</b> d3<span></span></a></li>
+</ul></li>
 <li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion<span></span></a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -130,9 +139,11 @@
 ##  9 tt000… Andreas Hof… 1909-01-01             NA Drama &lt;NA&gt;  &lt;NA&gt;            4.6
 ## 10 tt000… La bocana d… 1909-01-01             NA &lt;NA&gt;  &lt;NA&gt;  &lt;NA&gt;           NA  
 ## # … with 606,188 more rows, and 1 more variable: numVotes &lt;dbl&gt;</code></pre>
+<p>Describe the graphs:</p>
+<p>From the plot of missing values, we can see if we plot the entire data set, we cannot see the names of the variables below the graph, so we take a subset of the data set, which keeps all missing values. It turns out we have about half the complete data. More than 80% of data missing occurs in the three variables of Average Rating, Number of Votes and Runtime. At the same time, we also found some patterns between different types of variables: Average Rating and Number of Votes will be missing at the same time and the number of missing is almost the same, which may be caused by some force majeure factors in the data statistics process, for example, a certain film has not publicly released voting and scoring channels.</p>
 </div>
 <div id="missing-plot-for-boxoffice-data" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> missing plot for boxoffice data<a href="missing-values.html#missing-plot-for-boxoffice-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">4.2</span> Missing plot for boxoffice data<a href="missing-values.html#missing-plot-for-boxoffice-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><img src="finalproj_files/figure-html/unnamed-chunk-6-1.png" width="672" /><img src="finalproj_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
 
 </div>
