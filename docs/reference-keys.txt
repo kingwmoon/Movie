@@ -34,3 +34,4 @@ cleaning-boxoffice-data
 getting-the-yearly-boxoffice-data.
 missing-values-for-movie-basic-datatitlename-runtime-genres-and-rating
 missing-plot-for-box-office-data
+top10-rating-movie-information-in-2019-and-2020

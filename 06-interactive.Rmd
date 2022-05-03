@@ -31,4 +31,3 @@ parcoords(box1, rownames = FALSE,
 
 
 
- 
