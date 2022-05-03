@@ -3,7 +3,7 @@
 
 Since we have different data from both <https://datasets.imdbws.com>(prvided tsv) and <https://www.boxofficemojo.com/>(web scraping). There are some limits.
 
-## combining rating data from imdbdatasets
+## Combining rating data from imdbdatasets
 
 First of all we downloaded the title.basic.tsv.gz and title.rating.tsv.gz and read them by read_tsv()(the data are larger than the Storage limits in Github, Thus we didnot show the process of cleaning it here.)
 the code is as follow
