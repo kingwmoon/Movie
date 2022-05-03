@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Results | Movie Analysis</title>
   <meta name="description" content="Chapter 5 Results | Movie Analysis" />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Results | Movie Analysis" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Haoyue Wang" />
 
 
-<meta name="date" content="2022-05-02" />
+<meta name="date" content="2022-05-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,6 +54,70 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -72,36 +136,40 @@
 <li><a href="./">MovieAnalysis</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a></li>
+<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources<span></span></a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#describe-the-data"><i class="fa fa-check"></i><b>2.1</b> Describe the data:</a></li>
-<li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#basic-information"><i class="fa fa-check"></i><b>2.2</b> Basic information:</a></li>
-<li class="chapter" data-level="2.3" data-path="data-sources.html"><a href="data-sources.html#problems-with-the-data"><i class="fa fa-check"></i><b>2.3</b> Problems with the data:</a></li>
+<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#describe-the-data"><i class="fa fa-check"></i><b>2.1</b> Describe the data:<span></span></a></li>
+<li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#basic-information"><i class="fa fa-check"></i><b>2.2</b> Basic information:<span></span></a></li>
+<li class="chapter" data-level="2.3" data-path="data-sources.html"><a href="data-sources.html#problems-with-the-data"><i class="fa fa-check"></i><b>2.3</b> Problems with the data:<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation</a>
+<li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation<span></span></a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="data-transformation.html"><a href="data-transformation.html#part-1"><i class="fa fa-check"></i><b>3.1</b> part 1</a></li>
-<li class="chapter" data-level="3.2" data-path="data-transformation.html"><a href="data-transformation.html#part2-boxoffice-data"><i class="fa fa-check"></i><b>3.2</b> part2 boxoffice data</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values</a>
+<li class="chapter" data-level="3.1" data-path="data-transformation.html"><a href="data-transformation.html#combining-rating-data-from-imdbdatasets"><i class="fa fa-check"></i><b>3.1</b> combining rating data from imdbdatasets<span></span></a></li>
+<li class="chapter" data-level="3.2" data-path="data-transformation.html"><a href="data-transformation.html#cleaning-boxoffice-data"><i class="fa fa-check"></i><b>3.2</b> Cleaning boxoffice data<span></span></a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#missing-values-for-imdb_rating-data"><i class="fa fa-check"></i><b>4.1</b> Missing values for imdb_rating data</a></li>
-<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#missing-plot-for-boxoffice-data"><i class="fa fa-check"></i><b>4.2</b> Missing plot for boxoffice data</a></li>
-<li class="chapter" data-level="4.3" data-path="missing-values.html"><a href="missing-values.html#describe-the-graphs"><i class="fa fa-check"></i><b>4.3</b> Describe the graphs:</a></li>
+<li class="chapter" data-level="3.2.1" data-path="data-transformation.html"><a href="data-transformation.html#cleaning-top800-boxoffice-data"><i class="fa fa-check"></i><b>3.2.1</b> Cleaning Top800 Boxoffice data<span></span></a></li>
+<li class="chapter" data-level="3.2.2" data-path="data-transformation.html"><a href="data-transformation.html#cleaning-nearby-5-years-boxoffice-data"><i class="fa fa-check"></i><b>3.2.2</b> Cleaning nearby 5 years Boxoffice data<span></span></a></li>
+<li class="chapter" data-level="3.2.3" data-path="data-transformation.html"><a href="data-transformation.html#getting-the-yearly-boxoffice-data."><i class="fa fa-check"></i><b>3.2.3</b> Getting the yearly Boxoffice data.<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a>
+</ul></li>
+<li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values<span></span></a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="results.html"><a href="results.html#library"><i class="fa fa-check"></i><b>5.1</b> library</a></li>
-<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#read-data"><i class="fa fa-check"></i><b>5.2</b> Read data</a></li>
-<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#relationship-between"><i class="fa fa-check"></i><b>5.3</b> Relationship between</a></li>
+<li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#missing-values-for-movie-basic-datatitlename-runtime-genres-and-rating"><i class="fa fa-check"></i><b>4.1</b> Missing values for movie basic data(titlename, runtime, genres and rating)<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#missing-plot-for-box-office-data"><i class="fa fa-check"></i><b>4.2</b> Missing plot for Box office data<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component</a>
+<li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results<span></span></a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="interactive-component.html"><a href="interactive-component.html#parcoods"><i class="fa fa-check"></i><b>6.1</b> parcoods</a></li>
-<li class="chapter" data-level="6.2" data-path="interactive-component.html"><a href="interactive-component.html#d3"><i class="fa fa-check"></i><b>6.2</b> d3</a></li>
+<li class="chapter" data-level="5.1" data-path="results.html"><a href="results.html#library"><i class="fa fa-check"></i><b>5.1</b> library<span></span></a></li>
+<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#read-data"><i class="fa fa-check"></i><b>5.2</b> Read data<span></span></a></li>
+<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#relationship-between"><i class="fa fa-check"></i><b>5.3</b> Relationship between<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion</a></li>
+<li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component<span></span></a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="interactive-component.html"><a href="interactive-component.html#parcoods"><i class="fa fa-check"></i><b>6.1</b> parcoods<span></span></a></li>
+<li class="chapter" data-level="6.2" data-path="interactive-component.html"><a href="interactive-component.html#d3"><i class="fa fa-check"></i><b>6.2</b> d3<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion<span></span></a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -125,19 +193,31 @@
 <h1><span class="header-section-number">Chapter 5</span> Results<a href="results.html#results" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="library" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> library<a href="results.html#library" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="results.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(bookdown)</span>
+<span id="cb1-2"><a href="results.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="results.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb1-4"><a href="results.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-5"><a href="results.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(parcoords)</span>
+<span id="cb1-6"><a href="results.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(redav)</span>
+<span id="cb1-7"><a href="results.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(GGally)</span>
+<span id="cb1-8"><a href="results.html#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span></code></pre></div>
 </div>
 <div id="read-data" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Read data<a href="results.html#read-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="results.html#cb2-1" aria-hidden="true" tabindex="-1"></a>imdb_movie<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">&quot;data/imdb_movie.csv&quot;</span>)</span>
+<span id="cb2-2"><a href="results.html#cb2-2" aria-hidden="true" tabindex="-1"></a>boxo<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">&quot;data/imdb_Top800Movie_data.csv&quot;</span>)</span>
+<span id="cb2-3"><a href="results.html#cb2-3" aria-hidden="true" tabindex="-1"></a>box1721<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">&quot;data/imdb_20172021boxoffice_data.csv&quot;</span>)</span>
+<span id="cb2-4"><a href="results.html#cb2-4" aria-hidden="true" tabindex="-1"></a>yearlybox<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">&quot;data/imdb_yearlyboxoffice.csv&quot;</span>)</span></code></pre></div>
 </div>
 <div id="relationship-between" class="section level2 hasAnchor" number="5.3">
 <h2><span class="header-section-number">5.3</span> Relationship between<a href="results.html#relationship-between" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>Explanation of the graph:</p>
 <p>Here, we want to explore the box office trends for each year from 1980 to 2021. As can be seen from the plot, the box office grew steadily from 1980 to 2020, but fell off a cliff in 2020, which may also be due to the impact of the epidemic on the film industry. Fewer films, fewer moviegoers and a large number of theater closures were among the main reasons for the decline. We can also see that the box office in 2020 dropped to the level of 1980, which shows that the epidemic has a huge impact on the film industry.</p>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <p>Explanation of the graph:</p>
 <p>Here, we want to find the time trends in the number of films in different types. From the plot of missing values, we can see the total number of documentary films has been almost consistently the highest in 20 years, while the number of adventure and crime films has been the lowest. This may be because documentaries are more popular in the market and cheaper to make. In addition, we can see that from 2020 to 2018, the number of films released in different categories increased steadily, but there was a relatively large decline in 2020, which is probably due to the impact of COVID-19 in 2019-2020, which caused the entire film industry to enter a winter period. Rising filming costs, falling cinema attendance, the absence of actors due to the pandemic and stringent controls in different countries are all important factors. However, we can also see new opportunities for the film industry in 2021, with an increase in the number of films of all types, which cannot be achieved without the effective control of the epidemic worldwide and the research and development of vaccines.</p>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>Explanation of the graph:</p>
 <p>Here, we want to find whether the movie rating is related to the number of movies. From the line plot of films with different scores from 2020 to 2021, we can see all categories saw a decline in the number of films in 2020 because of the epidemic. Between 2000 and 2020, the total number of movies that scored more than 2 increased. Interestingly, the number of films with a score of less than 2 fluctuated more significantly during the 20 years, which may be due to the low public evaluation of low-scoring films, and the return on investment would change more sharply with different years, thus affecting the number of films released.</p>
 <pre><code>## # A tibble: 28 × 3
@@ -154,13 +234,13 @@
 ##  9 Drama           75821    6.26
 ## 10 Family           1962    6.10
 ## # … with 18 more rows</code></pre>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <p>Explanation of the graph:</p>
 <p>Here, we want to explore the relationship between the average rating of different types of movies over the past 20 years. As can be seen from the graph, talk show, documentary and music films occupy the top three spots, while short, horror and science films occupy the bottom three spots. Other categories were evenly distributed between 5.5 and 7 score. This may be because people prefer light-hearted movies in stressful lives. Talk shows and musical movies satisfy this need, while horror movies are the opposite. Science and short movies have lower average scores maybe because they are not so fancy.</p>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <p>Explanation of the graph:</p>
 <p>Here, we want to explore whether there is a relationship between the release time of a film and the type of film. As shown in the figure, in six different years from 1990 to 2015, the proportion of films of each type is basically the same, so we can think that these two variables are independent of each other. We can also see that documentaries have increased significantly in the past 25 years, which may be due to the fact that it may take several years to shoot a documentary, and the improvement of filming technology and easier access to information are both reasons for this phenomenon.</p>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p>Explanation of the graph:</p>
 <p>Here, we want to explore whether the length of a movie is related to the genre. As shown in the figure, we can see that these two variables are not independent. Documentaries take up the largest proportion of 60 minutes, while action films take up the largest proportion of more than 120 minutes. The proportion of films between 60 and 120 minutes is the largest for all genres. This may be because action movies need more foreshadowing and development of the story, while documentaries only narrate the story.</p>
 <pre><code>## 
@@ -173,24 +253,24 @@
 ## 
 ## data:  newct2
 ## X-squared = 60153, df = 18, p-value &lt; 2.2e-16</code></pre>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <p>Explanation of the graph:</p>
 <p>Here, we want to explore the relationship between average gross box office and genre between 2017 and 2021. As can be seen from the chart, the average box office in 2017-2019 is higher than that in 2020-2021, which may be due to the impact of the epidemic on the film industry. Science films and music films are the top grossing films. As can be seen from the previous figure, the total number of sci-fi movies is relatively low and the total box office is relatively high, which may be due to the high unit price of such movies. Because sci-fi movies are usually expensive and use IMAX and 3D technology, the high unit price is reasonable. The missing data in the chart is because we only analyze the top 200 films at the box office, while the missing data in the western genre is because the number of films in this genre has declined significantly since the beginning of the century. Some years in the top 200 list have no such films, and the number of moviegoers has decreased. The documentary’s missing figures for 2017 and 2019 are also due to its absence from the top 200 grossing lists for that year, and documentaries are not released in theaters every year.</p>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 <p>Explanation of the graph:</p>
 <p>Here, we want to explore the relationship between different variables in the film box office data set from 2017 to 2021. The variables include movie duration, average score, total vote count, total box office and domestic box office. We can see that there are distinct clusters in the figure. At the same time, there is some positive correlation between the number of people rating movies and the total box office, which may be because movies that are watched by more people have higher box office and therefore have more people rating them. Interestingly, the longer the film is, the higher the average rating is, which may be because the longer the film is, the richer the film content and plot can be displayed. Therefore, the story will be more complete, giving the audience a better viewing experience and therefore higher scores.</p>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-19-1.png" width="672" /><img src="finalproj_files/figure-html/unnamed-chunk-19-2.png" width="672" /></p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-16-1.png" width="672" /><img src="finalproj_files/figure-html/unnamed-chunk-16-2.png" width="672" /></p>
 <pre><code>## Standard deviations (1, .., p=5):
-## [1] 1.6420512 1.0591212 0.8586605 0.5573422 0.3660629
+## [1] 1.6420565 1.0591152 0.8586643 0.5573498 0.3660359
 ## 
 ## Rotation (n x k) = (5 x 5):
 ##                       PC1        PC2         PC3         PC4         PC5
-## runtimeMinutes -0.3290154 -0.4026928 -0.84136564  0.08837036 -0.11782145
-## averageRating  -0.4216226 -0.4688603  0.45179813  0.63054047  0.02648652
-## numVotes       -0.4923013 -0.3260812  0.25284465 -0.75767183  0.11538413
-## Total          -0.4769032  0.5202937 -0.14276063  0.14175107  0.67925242
-## Domestic       -0.4941517  0.4908912  0.06059115  0.02119979 -0.71464622</code></pre>
-<p><img src="finalproj_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+## runtimeMinutes -0.3290215 -0.4026648 -0.84137379  0.08835360 -0.11785436
+## averageRating  -0.4216232 -0.4688624  0.45177684  0.63055567  0.02644106
+## numVotes       -0.4922924 -0.3261075  0.25284931 -0.75765727  0.11543296
+## Total          -0.4769096  0.5202856 -0.14275786  0.14178100  0.67924848
+## Domestic       -0.4941499  0.4909032  0.06062383  0.02113741 -0.71463834</code></pre>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
 <p>Explanation of the graph:</p>
 <p>Here, we want to explore the distribution of total box office data by genre between 2017 and 2021. For the sake of illustration and analysis, we excluded movies that made more than $50 million. As we can see, horror films have the highest median box office, while mystery films have the lowest. Action movies have the most outliers, which may be because the quality of action movies is uneven. High-quality action movies such as 《The Avengers》 can reach the top of the total box office, but there are few such excellent action movies, and most action movies are concentrated in the low box office range.</p>
 

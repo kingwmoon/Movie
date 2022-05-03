@@ -59,7 +59,6 @@ Explanation of the graph:
 Here, we want to find the time trends in the number of films in different types. From the plot of missing values, we can see the total number of documentary films has been almost consistently the highest in 20 years, while the number of adventure and crime films has been the lowest. This may be because documentaries are more popular in the market and cheaper to make. In addition, we can see that from 2020 to 2018, the number of films released in different categories increased steadily, but there was a relatively large decline in 2020, which is probably due to the impact of COVID-19 in 2019-2020, which caused the entire film industry to enter a winter period. Rising filming costs, falling cinema attendance, the absence of actors due to the pandemic and stringent controls in different countries are all important factors. However, we can also see new opportunities for the film industry in 2021, with an increase in the number of films of all types, which cannot be achieved without the effective control of the epidemic worldwide and the research and development of vaccines.
 
 
-
 ```{r}
 imdb_movie%>%drop_na(averageRating)%>%
   mutate(star=cut(averageRating, breaks = c(0, 2, 4,6,8,10),levels = 1:5, right = FALSE))%>%
@@ -79,8 +78,6 @@ Explanation of the graph:
 Here, we want to find whether the movie rating is related to the number of movies. From the line plot of films with different scores from 2020 to 2021, we can see all categories saw a decline in the number of films in 2020 because of the epidemic. Between 2000 and 2020, the total number of movies that scored more than 2 increased. Interestingly, the number of films with a score of less than 2 fluctuated more significantly during the 20 years, which may be due to the low public evaluation of low-scoring films, and the return on investment would change more sharply with different years, thus affecting the number of films released.
 
 
-
-
 ```{r}
 (imdb_averate_g_1<-imdb_movie%>%drop_na(g1,averageRating)%>%select(primaryTitle,averageRating,g1)%>%group_by(g1)%>%summarise(count_gen=n(),gen_ave=sum(averageRating)/count_gen))
 imdb_averate_g_1%>%
@@ -95,8 +92,6 @@ imdb_averate_g_1%>%
 Explanation of the graph:
 
 Here, we want to explore the relationship between the average rating of different types of movies over the past 20 years. As can be seen from the graph, talk show, documentary and music films occupy the top three spots, while short, horror and science films occupy the bottom three spots. Other categories were evenly distributed between 5.5 and 7 score. This may be because people prefer light-hearted movies in stressful lives. Talk shows and musical movies satisfy this need, while horror movies are the opposite. Science and short movies have lower average scores maybe because they are not so fancy.
-
-
 
 
 ```{r}
@@ -115,9 +110,6 @@ vcd::mosaic(genres~startYear,imdb_mos,direction = c("v", "h"),rot_labels=c(30,0)
 Explanation of the graph:
 
 Here, we want to explore whether there is a relationship between the release time of a film and the type of film. As shown in the figure, in six different years from 1990 to 2015, the proportion of films of each type is basically the same, so we can think that these two variables are independent of each other. We can also see that documentaries have increased significantly in the past 25 years, which may be due to the fact that it may take several years to shoot a documentary, and the improvement of filming technology and easier access to information are both reasons for this phenomenon.
-
-
-
 
 
 ```{r}

@@ -32,3 +32,5 @@ cleaning-nearby-5-years-boxoffice-data
 combining-rating-data-from-imdbdatasets
 cleaning-boxoffice-data
 getting-the-yearly-boxoffice-data.
+missing-values-for-movie-basic-datatitlename-runtime-genres-and-rating
+missing-plot-for-box-office-data
