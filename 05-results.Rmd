@@ -132,10 +132,6 @@ Explanation of the graph:
 
 Here, we want to explore whether the length of a movie is related to the genre. As shown in the figure, we can see that these two variables are not independent. Documentaries take up the largest proportion of 60 minutes, while action films take up the largest proportion of more than 120 minutes. The proportion of films between 60 and 120 minutes is the largest for all genres. This may be because action movies need more foreshadowing and development of the story, while documentaries only narrate the story.
 
-
-
-
-
 ```{r}
 newct1 <- xtabs(Freq ~ genres+startYear, imdb_mos)
 (X1test <- chisq.test(newct1, correct = FALSE))
@@ -165,7 +161,6 @@ Here, we want to explore the relationship between average gross box office and g
 
 
 ```{r}
-
 boxo_norm<-boxo[,c(2,7,11,12,13,14)]%>%drop_na()%>%head(200)
 boxo_norm%>%
   ggparcoord(columns = 2:6,scale = "uniminmax")
@@ -177,18 +172,7 @@ Here, we want to explore the relationship between different variables in the fil
 
 
 
-```{r}
 
-boxo_norm<-boxo[,c(2,7,11,12,13,14)]%>%drop_na()
-
-pca_Data<-boxo_norm
-draw_biplot(pca_Data)
-
-pca<-boxo_norm[,-1]%>%
-  prcomp(scale.=TRUE)
-biplot(pca,cex=0.5)
-pca
-```
 
 ```{r}
 box1721_1<-subset(box1721,box1721$Total < 500000000)
