@@ -1,6 +1,7 @@
 # Missing values
 
-## Missing values for imdb_rating data
+## Missing values for movie basic data(titlename, runtime, genres and rating)
+
 ```{r}
 library(tidyverse)
 imdb_movie<-read_csv("data/imdb_movie.csv")
@@ -15,9 +16,10 @@ imdb_movie
 
 Describe the graphs:
 
-From the plot of missing values, we can see if we plot the entire data set, we cannot see the names of the variables below the graph, so we take a subset of the data set, which keeps all missing values. It turns out we have about half the complete data. More than 80% of data missing occurs in the three variables of Average Rating, Number of Votes and Runtime. At the same time, we also found some patterns between different types of variables: Average Rating and Number of Votes will be missing at the same time and the number of missing is almost the same, which may be caused by some force majeure factors in the data statistics process, for example, a certain film has not publicly released voting and scoring channels. 
+From the plot of missing values, we can see if we plot the entire data set, we cannot see the names of the variables below the graph, so we take a subset of the data set, which keeps all missing values. It turns out we have about half the complete data. More than 80% of data missing occurs in the three variables of g3 which is the variable separate from genres since the IMDB system will not force each film to have 3 labels of genres. It is reasonable that most movies only have 1 or 2 labels of genres. THat means more than 80% films only have  Number of Votes and Runtime. At the same time, we also found some patterns between different types of variables: Average Rating and Number of Votes will be missing at the same time and the number of missing is almost the same, which may be caused by some force majeure factors in the data statistics process, for example, a certain film has not publicly released voting and scoring channels. 
 
-## Missing plot for boxoffice data
+## Missing plot for Box office data()
+
 ```{r}
 boxo<-read_csv("data/imdb_Top800Movie_data.csv")
 plot_missing(boxo)
