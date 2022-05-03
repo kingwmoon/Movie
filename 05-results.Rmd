@@ -109,18 +109,7 @@ box1721_new2%>%
     ggplot(aes(startYear,genres))+
   geom_tile(aes(fill=averagegross))
 ```
-```{r}
-box1<-box1721_new%>%drop_na(genres,startYear)%>%group_by(startYear,genres)%>%summarise(averagegross=sum(Total)/n())%>%filter(startYear>ymd("2016-01-01"))%>%pivot_wider(
-  values_from = averagegross,
-  names_from = startYear
-)
-parcoords(box1, rownames = FALSE,
-            brushMode = "1D-axes",
-            alpha = 0.5,
-            withD3 = TRUE,
-            width = 900,
-            height = 600)
-```
+
 
 ```{r}
 
