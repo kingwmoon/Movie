@@ -35,14 +35,14 @@ parcoords(box1, rownames = FALSE,
 
 Explanation of the graph:
 
-Here, we make an interactive graphic of D3 about the film industry by imitating the Problem in Problem Set5. 
-There are three main conclusions: 
+Here, we make an interactive graphic of D3 about the film industry 
 
-1. From the perspective of top10rating films in the past two years, the overall range of ratings has increased and the highest score has increased, but the box office of Top10rating films has decreased. This may be due to different statistics from year to year, and 2020, the first year after the pandemic, will also see changes in audience ratings and a general decline in box office.
+ 
+1. From the perspective of top10rating films in the past two years, the overall range of ratings has increased and the highest score has increased, but the box office of Top10rating films has decreased. This may be due to that 2020, as the first year after the pandemic, Many films delay the release.
 
-2. Although the highest-scoring films in both years were foreign films, 2019 was dominated by 《Parasite》, while 2020 was dominated by an Indian film. This is probably due to the shutdown of the film industry around the world. 
+2. Although the highest-scoring films in both years were foreign films, 2019 was dominated by 《Parasite》,a famous film overworld, while 2020 was dominated by an Indian film which is less popular. This is probably due to the shutdown of the film industry in the film developed region.
 
-3. The total number of votes cast in 2020 dropped significantly. This has also led to the rise of Indian films outside Europe and America.
+3. The total number of voters for each film in 2020 dropped significantly. This has also led to the rise of Indian films outside Europe and America.
 
 
 

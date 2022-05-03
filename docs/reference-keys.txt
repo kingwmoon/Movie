@@ -46,3 +46,4 @@ chi-square-test
 heatmap
 parallel-coordinal-plot
 boxplot
+top-10-rating-movies-under-the-influence-of-covid-19
