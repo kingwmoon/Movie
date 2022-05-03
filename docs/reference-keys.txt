@@ -15,3 +15,13 @@ conclusion
 parcoods
 d3
 describe-the-data
+basic-information
+problems-with-the-data
+describe-the-graphs
+explanation-of-the-graph
+explanation-of-the-graph-1
+explanation-of-the-graph-2
+explanation-of-the-graph-3
+explanation-of-the-graph-4
+explanation-of-the-graph-5
+explanation-of-the-graph-6
