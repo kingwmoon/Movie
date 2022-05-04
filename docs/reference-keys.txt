@@ -57,3 +57,4 @@ explore-box-office-information
 search-for-anomalies-with-box-plot
 in-what-ways-has-covid-19-affected-the-film-industry
 trend-of-count-for-different-genres
+finding-the-cluster-and-outlier-in-parallel-coordinal-plot

@@ -1,6 +1,6 @@
 # Interactive component
 
-## parcoods
+## Finding the cluster and outlier in Parallel coordinal plot
 
 ```{r}
 library(tidyverse)

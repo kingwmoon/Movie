@@ -1,7 +1,7 @@
 Release Group,%...5,%...7,tconst,startYear,runtimeMinutes,g1,g2,g3,averageRating,numVotes,Total
 Avengers: Endgame,30.7%,69.3%,tt4154796,2019-01-01,181,Action,Adventure,Drama,8.4,1033089,2797501328
 Avengers: Infinity War,33.1%,66.9%,tt4154756,2018-01-01,149,Action,Adventure,Sci-Fi,8.5,998241,2048359754
-Spider-Man: No Way Home,42.5%,57.5%,tt10872600,2021-01-01,148,Action,Adventure,Fantasy,8.5,564567,1892570726
+Spider-Man: No Way Home,42.5%,57.5%,tt10872600,2021-01-01,148,Action,Adventure,Fantasy,8.5,564567,1892583292
 The Lion King,32.8%,67.2%,tt0110357,1994-01-01,88,Adventure,Animation,Drama,8.5,1017294,1656943394
 Frozen II,32.9%,67.1%,tt4520988,2019-01-01,103,Adventure,Animation,Comedy,6.8,162951,1450026933
 Black Panther,52%,48%,tt1825683,2018-01-01,134,Action,Adventure,Sci-Fi,7.3,714215,1346913161
@@ -77,7 +77,7 @@ Bad Boys for Life,48.4%,51.6%,tt1502397,2020-01-01,124,Action,Comedy,Crime,6.5,1
 The Captain,0.2%,99.8%,tt6763252,2017-01-01,118,Drama,History,Thriller,7.3,17190,417282021
 Kingsman: The Golden Circle,24.4%,75.6%,tt4649466,2017-01-01,141,Action,Adventure,Comedy,6.7,314487,410902662
 The Mummy,19.6%,80.4%,tt0120616,1999-01-01,124,Action,Adventure,Fantasy,7.1,417390,409231607
-Sing 2,40.1%,59.9%,tt6467266,2021-01-01,110,Adventure,Animation,Comedy,7.5,41393,406024390
+Sing 2,40.1%,59.9%,tt6467266,2021-01-01,110,Adventure,Animation,Comedy,7.5,41393,406025455
 Alita: Battle Angel,21.2%,78.8%,tt0437086,2019-01-01,122,Action,Adventure,Sci-Fi,7.3,257262,404980543
 Eternals,41%,59%,tt9032400,2021-01-01,156,Action,Adventure,Fantasy,6.4,282531,402064899
 Dune,27%,73%,tt1160419,2021-01-01,155,Action,Adventure,Drama,8.1,530333,400671789
@@ -204,8 +204,8 @@ The Climbers,0.3%,99.7%,tt9635616,2019-01-01,125,Action,Adventure,Drama,5.5,1211
 The Matrix Resurrections,24.1%,75.9%,tt10838180,2021-01-01,148,Action,Sci-Fi,NA,5.7,212443,156575035
 Escape Room,36.6%,63.4%,tt5886046,2019-01-01,99,Action,Adventure,Horror,6.4,115411,155712077
 Yesterday,47.4%,52.6%,tt8079248,2019-01-01,116,Comedy,Fantasy,Music,6.8,147181,154608507
-Jujutsu Kaisen 0: The Movie,19.2%,80.8%,tt14331144,2021-01-01,105,Action,Animation,Fantasy,8.1,4965,154261163
-House of Gucci,34.9%,65.1%,tt11214590,2021-01-01,158,Crime,Drama,NA,6.7,93833,154156873
+Jujutsu Kaisen 0: The Movie,19.2%,80.8%,tt14331144,2021-01-01,105,Action,Animation,Fantasy,8.1,4965,154394497
+House of Gucci,34.9%,65.1%,tt11214590,2021-01-01,158,Crime,Drama,NA,6.7,93833,153972764
 Peter Rabbit 2: The Runaway,26.3%,73.7%,tt8376234,2021-01-01,93,Adventure,Animation,Comedy,6.2,10230,153901717
 Duckweed,0.3%,99.7%,tt6461514,2017-01-01,102,Comedy,Drama,Fantasy,6.4,1361,152894264
 Red Sparrow,30.9%,69.1%,tt2873282,2018-01-01,140,Action,Drama,Thriller,6.6,181646,151572634
@@ -378,7 +378,7 @@ Capernaum,2.6%,97.4%,tt8267604,2018-01-01,126,Drama,NA,NA,8.4,83443,64417003
 Isle of Dogs,49.8%,50.2%,tt5104604,2018-01-01,101,Adventure,Animation,Comedy,7.8,161865,64241499
 Suck Me Shakespeer 3,-,100%,tt6471264,2017-01-01,120,Comedy,NA,NA,5.4,5740,64236772
 The Rescue,<0.1%,100%,tt9098872,2021-01-01,107,Action,Documentary,Mystery,8.4,11238,64203587
-Belle,6.3%,93.7%,tt2404181,2013-01-01,100,Biography,Drama,Romance,7.3,30128,63884395
+Belle,6.3%,93.7%,tt2404181,2013-01-01,100,Biography,Drama,Romance,7.3,30128,63878700
 Detective Conan: Crimson Love Letter,-,100%,tt5692622,2017-01-01,112,Action,Adventure,Animation,6.5,1219,63144805
 The Mountain Between Us,48.3%,51.7%,tt2226597,2017-01-01,112,Action,Adventure,Drama,6.4,73796,62832209
 The Star,65%,35%,tt4587656,2017-01-01,86,Adventure,Animation,Comedy,6.3,8006,62812974
@@ -452,8 +452,8 @@ Little,83.4%,16.6%,tt8085790,2019-01-01,109,Comedy,Fantasy,Romance,5.5,13161,489
 Bleeding Steel,-,100%,tt5813366,2017-01-01,109,Action,Sci-Fi,Thriller,5.1,9894,48825526
 Fantasy Island,55.9%,44.1%,tt0983946,2020-01-01,109,Fantasy,Horror,Mystery,4.9,48489,48811343
 Isn't It Romantic,100%,-,tt2452244,2019-01-01,89,Comedy,Fantasy,Musical,5.9,68374,48791187
-Belfast,19.1%,80.9%,tt12789558,2021-01-01,98,Biography,Drama,History,7.3,50721,48540228
 The Legend of Hei,-,100%,tt10734928,2019-01-01,101,Action,Adventure,Animation,7.2,1387,48507082
+Belfast,19.1%,80.9%,tt12789558,2021-01-01,98,Biography,Drama,History,7.3,50721,48466540
 Logan Lucky,57.3%,42.7%,tt5439796,2017-01-01,118,Action,Comedy,Crime,7,145853,48453605
 Boo 2! A Madea Halloween,97.9%,2.1%,tt6217804,2017-01-01,101,Comedy,Drama,Horror,3.8,4700,48333932
 Sky Hunter,-,100%,tt6908536,2017-01-01,115,Action,Drama,Romance,6.1,2699,48065601
@@ -603,9 +603,9 @@ The House That Never Dies II,-,100%,tt7627782,2017-01-01,97,Horror,Thriller,NA,4
 Stuber,69.1%,30.9%,tt7734218,2019-01-01,93,Action,Comedy,Crime,6.2,46186,32390945
 Hit Me Anyone One More Time!,-,100%,tt8825764,2019-01-01,127,Comedy,Drama,NA,6.1,536,32333512
 Masquerade Night,-,100%,tt13582738,2021-01-01,129,Crime,Drama,Mystery,6.5,263,32287400
-Licorice Pizza,53.7%,46.3%,tt11271038,2021-01-01,133,Comedy,Drama,Romance,7.4,68838,32221770
 Somewhere Winter,-,100%,tt11162126,2019-01-01,125,Drama,NA,NA,6,102,32218990
 Once Upon a Time in Hong Kong,-,100%,tt14466064,2021-01-01,105,Action,Crime,History,5.5,149,32218874
+Licorice Pizza,53.8%,46.2%,tt11271038,2021-01-01,133,Comedy,Drama,Romance,7.4,68838,32203251
 Home Sweet Home,-,100%,tt2348394,2013-01-01,80,Horror,Mystery,Thriller,4.7,1772,32178677
 The Kid Who Would Be King,52.2%,47.8%,tt6811018,2019-01-01,120,Action,Adventure,Family,6.1,16475,32140970
 Respect,75.6%,24.4%,tt2452150,2021-01-01,145,Biography,Drama,Music,6.5,11334,32121125
@@ -748,7 +748,7 @@ Stigmatized Properties,-,100%,tt13050614,2020-01-01,111,Horror,NA,NA,4.5,187,212
 The Prison,1%,99%,tt6589464,2017-01-01,125,Action,Crime,NA,6.5,1873,21205329
 Wish Dragon,-,100%,tt5562070,2021-01-01,98,Adventure,Animation,Comedy,7.2,24097,21120000
 Pokémon the Movie: Secrets of the Jungle,-,100%,tt11819890,2020-01-01,99,Action,Adventure,Animation,6.5,1737,21097921
-Parallel Mothers,10.9%,89.1%,tt12618926,2021-01-01,123,Drama,NA,NA,7.1,20636,21089972
+Parallel Mothers,10.9%,89.1%,tt12618926,2021-01-01,123,Drama,NA,NA,7.1,20636,21087058
 The Secret Mission,-,100%,tt9602258,2019-01-01,135,Comedy,Drama,History,6.8,439,21083522
 The Photograph,99.5%,0.5%,tt7798646,2020-01-01,106,Drama,Romance,NA,6,5257,20690779
 Yarn,-,100%,tt10467054,2020-01-01,130,Romance,NA,NA,6.5,323,20474270
@@ -797,7 +797,7 @@ The Night House,46%,54%,tt9731534,2020-01-01,107,Horror,Mystery,Thriller,6.5,378
 Padre no hay más que uno 2: La llegada de la suegra,-,100%,tt11506284,2020-01-01,96,Comedy,Family,NA,5.5,1238,15373181
 Minari,20.3%,79.7%,tt10633456,2020-01-01,115,Drama,NA,NA,7.5,73178,15322552
 Something About Love,-,100%,tt10553438,2021-01-01,105,Comedy,Romance,NA,5.5,310,15204017
-Drive My Car,15.6%,84.4%,tt14039582,2021-01-01,179,Drama,NA,NA,7.6,30280,15124818
+Drive My Car,15.6%,84.4%,tt14039582,2021-01-01,179,Drama,NA,NA,7.6,30280,15122552
 Anita,3.7%,96.3%,tt0069718,1973-01-01,95,Drama,NA,NA,5.1,1593,15026604
 The Way Back,92.5%,7.5%,tt1023114,2010-01-01,133,Adventure,Drama,History,7.3,115234,14690514
 The Tomorrow War,-,100%,tt9777666,2021-01-01,138,Action,Adventure,Drama,6.6,192737,14400000
@@ -830,7 +830,7 @@ Ducobu 3,-,100%,tt10658928,2020-01-01,94,Comedy,NA,NA,4.2,170,12157793
 On Your Mark,-,100%,tt11317408,2021-01-01,104,Comedy,Drama,Sport,6.7,64,12100000
 Legend No. 17,-,100%,tt2182001,2013-01-01,134,Biography,Drama,Sport,7.5,5561,12049148
 Stand by Me,-,100%,tt0092005,1986-01-01,89,Adventure,Drama,NA,8.1,390868,11900000
-The Worst Person in the World,25.7%,74.3%,tt10370710,2021-01-01,128,Comedy,Drama,Romance,7.9,33120,11799647
+The Worst Person in the World,25.7%,74.3%,tt10370710,2021-01-01,128,Comedy,Drama,Romance,7.9,33120,11819292
 On the Line,-,100%,tt0279286,2001-01-01,85,Comedy,Family,Romance,4.2,4229,11772156
 Wotakoi: Love Is Hard for Otaku,-,100%,tt9018612,2020-01-01,114,Comedy,Musical,Romance,5.3,422,11702371
 Let Him Go,80.5%,19.5%,tt9340860,2020-01-01,113,Crime,Drama,Thriller,6.7,24001,11630934
@@ -846,7 +846,7 @@ Me contro Te - Il film: La vendetta del Signor S,-,100%,tt11559652,2020-01-01,64
 Impractical Jokers: The Movie,100%,-,tt9208444,2020-01-01,92,Comedy,NA,NA,5.8,6271,10691091
 Honest Candidate,-,100%,tt11812338,2020-01-01,104,Comedy,NA,NA,6.2,512,10597464
 Krack,-,100%,tt8302382,2021-01-01,154,Action,Crime,Thriller,7.4,6474,10442916
-Two by Two: Overboard!,-,100%,tt12615474,2020-01-01,85,Adventure,Animation,Comedy,5.8,532,10376007
+Two by Two: Overboard!,-,100%,tt12615474,2020-01-01,85,Adventure,Animation,Comedy,5.8,532,10388993
 Kaiserschmarrndrama,-,100%,tt11034894,2021-01-01,96,Comedy,Crime,NA,7.1,609,10357720
 "Caution, Hazardous Wife: The Movie",-,100%,tt11477842,2021-01-01,119,Adventure,NA,NA,5.7,223,10356359
 Realm of Terracotta,-,100%,tt10075380,2021-01-01,111,Adventure,Animation,Fantasy,7,83,10341512
@@ -855,7 +855,7 @@ Detective Conan: The Scarlet Alibi,-,100%,tt13884166,2021-01-01,93,Animation,Cri
 Never Stop,-,100%,tt14778138,2021-01-01,98,Drama,Sport,NA,5.1,39,10224935
 My Spy,-,100%,tt8242084,2020-01-01,99,Action,Comedy,NA,6.3,29306,10200000
 The Asadas,-,100%,tt9860350,2020-01-01,127,Drama,Family,NA,7.5,471,10066797
-Black Box,-,100%,tt12298506,2020-01-01,100,Horror,Mystery,Sci-Fi,6.2,13662,9698463
+Black Box,-,100%,tt12298506,2020-01-01,100,Horror,Mystery,Sci-Fi,6.2,13662,9697802
 Stolen Identity 2,-,100%,tt10127410,2020-01-01,118,Thriller,NA,NA,4.3,143,9687188
 Ainbo,-,100%,tt6570098,2021-01-01,84,Adventure,Animation,Comedy,4.8,1454,9682962
 The Soul,-,100%,tt13598976,2021-01-01,130,Drama,Mystery,Sci-Fi,6.6,2616,9600000
@@ -880,8 +880,8 @@ The Secret Garden,-,100%,tt0108071,1993-01-01,101,Drama,Family,Fantasy,7.3,40887
 The Protégé,86.2%,13.8%,tt6079772,2021-01-01,109,Action,Thriller,NA,6.1,26663,8639684
 Eltilerin Savasi,-,100%,tt11542214,2020-01-01,118,Comedy,Family,NA,5.8,4250,8613864
 The Medium,-,100%,tt13446168,2021-01-01,130,Horror,NA,NA,6.6,6047,8529010
-Delicious,-,100%,tt10738536,2021-01-01,112,Comedy,Drama,History,7,1484,8448610
 Honey Lemon Soda,-,100%,tt14311250,2021-01-01,111,Comedy,Drama,Romance,6.8,64,8441488
+Delicious,-,100%,tt10738536,2021-01-01,112,Comedy,Drama,History,7,1484,8439618
 Malang,-,100%,tt9877170,2020-01-01,135,Action,Crime,Drama,6.5,10177,8399765
 I Don't Have Any Money Left in My Retirement Account,-,100%,tt11354164,2021-01-01,115,Family,NA,NA,8.2,11,8204616
 White Snake 2: Green Snake,-,100%,tt15000314,2021-01-01,131,Action,Adventure,Animation,6.8,2077,8170000
