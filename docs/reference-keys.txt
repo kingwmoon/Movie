@@ -55,3 +55,5 @@ finding-the-top-rated-genres
 relationship-between-time-movies-length-and-genres
 explore-box-office-information
 search-for-anomalies-with-box-plot
+in-what-ways-has-covid-19-affected-the-film-industry
+trend-of-count-for-different-genres

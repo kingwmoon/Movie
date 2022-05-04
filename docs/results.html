@@ -23,7 +23,7 @@
 <meta name="author" content="Haoyue Wang &amp; Yanhao Ren" />
 
 
-<meta name="date" content="2022-05-03" />
+<meta name="date" content="2022-05-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -162,10 +162,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="5.1" data-path="results.html"><a href="results.html#library"><i class="fa fa-check"></i><b>5.1</b> library<span></span></a></li>
 <li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#read-data"><i class="fa fa-check"></i><b>5.2</b> Read data<span></span></a></li>
-<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#time-series-to-chase-the-trend-of-data"><i class="fa fa-check"></i><b>5.3</b> Time series to chase the trend of data：<span></span></a>
+<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#in-what-ways-has-covid-19-affected-the-film-industry"><i class="fa fa-check"></i><b>5.3</b> In what ways has COVID-19 affected the film industry<span></span></a>
 <ul>
-<li class="chapter" data-level="5.3.1" data-path="results.html"><a href="results.html#total-box-office-trend"><i class="fa fa-check"></i><b>5.3.1</b> Total Box Office Trend:<span></span></a></li>
-<li class="chapter" data-level="5.3.2" data-path="results.html"><a href="results.html#trend-of-count-with-different-genres"><i class="fa fa-check"></i><b>5.3.2</b> Trend of Count with different genres :<span></span></a></li>
+<li class="chapter" data-level="5.3.1" data-path="results.html"><a href="results.html#trend-of-count-for-different-genres"><i class="fa fa-check"></i><b>5.3.1</b> Trend of Count for different genres :<span></span></a></li>
+<li class="chapter" data-level="5.3.2" data-path="results.html"><a href="results.html#total-box-office-trend"><i class="fa fa-check"></i><b>5.3.2</b> Total Box Office Trend:<span></span></a></li>
 <li class="chapter" data-level="5.3.3" data-path="results.html"><a href="results.html#the-trend-of-counts-of-different-rating"><i class="fa fa-check"></i><b>5.3.3</b> The Trend of Counts of Different Rating ：<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="5.4" data-path="results.html"><a href="results.html#finding-the-top-rated-genres"><i class="fa fa-check"></i><b>5.4</b> Finding the top-rated genres<span></span></a>
@@ -230,25 +230,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-3"><a href="results.html#cb2-3" aria-hidden="true" tabindex="-1"></a>box1721<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">&quot;data/imdb_20172021boxoffice_data.csv&quot;</span>)</span>
 <span id="cb2-4"><a href="results.html#cb2-4" aria-hidden="true" tabindex="-1"></a>yearlybox<span class="ot">&lt;-</span><span class="fu">read_csv</span>(<span class="st">&quot;data/imdb_yearlyboxoffice.csv&quot;</span>)</span></code></pre></div>
 </div>
-<div id="time-series-to-chase-the-trend-of-data" class="section level2 hasAnchor" number="5.3">
-<h2><span class="header-section-number">5.3</span> Time series to chase the trend of data：<a href="results.html#time-series-to-chase-the-trend-of-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="total-box-office-trend" class="section level3 hasAnchor" number="5.3.1">
-<h3><span class="header-section-number">5.3.1</span> Total Box Office Trend:<a href="results.html#total-box-office-trend" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="in-what-ways-has-covid-19-affected-the-film-industry" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> In what ways has COVID-19 affected the film industry<a href="results.html#in-what-ways-has-covid-19-affected-the-film-industry" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="trend-of-count-for-different-genres" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Trend of Count for different genres :<a href="results.html#trend-of-count-for-different-genres" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><img src="finalproj_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>Explanation of the graph:</p>
-<p>Here, we want to explore the box office trends for each year from 1980 to 2021. As can be seen from the plot, the box office grew steadily from 1980 to 2020, but fell off a cliff in 2020, which may also be due to the impact of the epidemic on the film industry. Fewer films, fewer moviegoers and a large number of theater closures were among the main reasons for the decline. We can also see that the box office in 2020 dropped to the level of 1980, which shows that the epidemic has a huge impact on the film industry.</p>
+<p>Here, we want to find the time trends in the number of films in different types. From the plot of missing values, we can see the total number of documentary films has been almost consistently the highest in 20 years, while the number of adventure and crime films has been the lowest. This may be because documentaries are more popular in the market and cheaper to make. In addition, we can see that from 2020 to 2018, the number of films released in different categories increased steadily, but there was a relatively large decline in 2020, which is probably due to the impact of COVID-19 in 2019-2020, which caused the entire film industry to enter a winter period. Rising filming costs, falling cinema attendance, the absence of actors due to the pandemic and stringent controls in different countries are all important factors. However, we can also see new opportunities for the film industry in 2021, with an increase in the number of films of all types, which cannot be achieved without the effective control of the epidemic worldwide and the research and development of vaccines.</p>
 </div>
-<div id="trend-of-count-with-different-genres" class="section level3 hasAnchor" number="5.3.2">
-<h3><span class="header-section-number">5.3.2</span> Trend of Count with different genres :<a href="results.html#trend-of-count-with-different-genres" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="total-box-office-trend" class="section level3 hasAnchor" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> Total Box Office Trend:<a href="results.html#total-box-office-trend" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><img src="finalproj_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <p>Explanation of the graph:</p>
-<p>Here, we want to find the time trends in the number of films in different types. From the plot of missing values, we can see the total number of documentary films has been almost consistently the highest in 20 years, while the number of adventure and crime films has been the lowest. This may be because documentaries are more popular in the market and cheaper to make. In addition, we can see that from 2020 to 2018, the number of films released in different categories increased steadily, but there was a relatively large decline in 2020, which is probably due to the impact of COVID-19 in 2019-2020, which caused the entire film industry to enter a winter period. Rising filming costs, falling cinema attendance, the absence of actors due to the pandemic and stringent controls in different countries are all important factors. However, we can also see new opportunities for the film industry in 2021, with an increase in the number of films of all types, which cannot be achieved without the effective control of the epidemic worldwide and the research and development of vaccines.</p>
+<p>Here, we explored the box office trends for each year from 1980 to 2021. As can be seen from the plot, the box office grew steadily from 1980 to 2019, but fell off a cliff in 2020, which may also be due to the impact of the epidemic on the film industry. Fewer films, fewer moviegoers and a large number of theater closures were among the main reasons for the decline. We can also see that the box office in 2020 dropped to the level of 1980, which shows that the epidemic has a huge impact on the film industry.</p>
 </div>
 <div id="the-trend-of-counts-of-different-rating" class="section level3 hasAnchor" number="5.3.3">
 <h3><span class="header-section-number">5.3.3</span> The Trend of Counts of Different Rating ：<a href="results.html#the-trend-of-counts-of-different-rating" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><img src="finalproj_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>Explanation of the graph:</p>
-<p>Here, we want to find whether the movie rating is related to the number of movies. From the line plot of films with different scores from 2020 to 2021, we can see all categories saw a decline in the number of films in 2020 because of the epidemic. Between 2000 and 2020, the total number of movies that scored more than 2 increased. Interestingly, the number of films with a score of less than 2 fluctuated more significantly during the 20 years, which may be due to the low public evaluation of low-scoring films, and the return on investment would change more sharply with different years, thus affecting the number of films released.</p>
+<p>The technology and the industry is becoming more mature, we can see IMAX movies today, 3D movies today compared to 100 years ago, we have a lot of the latest technology, but do we have more and more High quality movies?
+From the line plot of films with different scores from 2020 to 2021, we can see all categories saw a decline in the number of films in 2020 because of the epidemic. Between 2000 and 2020, the total number of movies that scored more than 2 increased.
+Even without the influence of Covid-19, It seems like the number of 5 stars movie are decrease since 2017. In fact, Covid-19 might have positive influence on the quality of movies. After the first year of 2020, Only the number of five stars movies increased. Maybe because everyone is at home, there are fewer temptations and they can concentrate on making better script.
+Interestingly, the number of films with a score of less than 2 fluctuated more significantly during the 20 years, which may be due to the low public evaluation of low-scoring films, and the return on investment would change more sharply with different years, thus affecting the number of films released.</p>
 </div>
 </div>
 <div id="finding-the-top-rated-genres" class="section level2 hasAnchor" number="5.4">
@@ -279,8 +282,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="mosiac-plot1" class="section level3 hasAnchor" number="5.5.1">
 <h3><span class="header-section-number">5.5.1</span> Mosiac plot(1)<a href="results.html#mosiac-plot1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><img src="finalproj_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
-<p>Explanation of the graph:</p>
-<p>Here, we want to explore whether there is a relationship between the release time of a film and the type of film. As shown in the figure, in six different years from 1990 to 2015, the proportion of films of each type is basically the same, so we can think that these two variables are independent of each other. We can also see that documentaries have increased significantly in the past 25 years, which may be due to the fact that it may take several years to shoot a documentary, and the improvement of filming technology and easier access to information are both reasons for this phenomenon.</p>
+<p>Explanation of the graph:
+Does the genres people like to watch changing those days?</p>
+<p>Here, we made this mosaic plot to explore whether there is a relationship between the release time of a film and the type of film. As shown in the figure, in six different years from 1990 to 2015, the proportion of films of each type is changing from 1990-2005,but pretty much the same after 2005. It seems like the film industry have found a “fixed proportion” for different Genres.</p>
+<p>Documentaries have increased significantly in the past 25 years, which may be due to the fact that it may take several years to shoot a documentary, and the improvement of filming technology and easier access to information are both reasons for this phenomenon.</p>
 </div>
 <div id="mosaic-plot2" class="section level3 hasAnchor" number="5.5.2">
 <h3><span class="header-section-number">5.5.2</span> Mosaic plot(2)<a href="results.html#mosaic-plot2" class="anchor-section" aria-label="Anchor link to header"></a></h3>

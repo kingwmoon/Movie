@@ -5,6 +5,7 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE,echo=FALSE)
 ```
 
 ## library
+
 ```{r,echo=TRUE}
 library(bookdown)
 library(tidyverse)
@@ -17,6 +18,7 @@ library(plotly)
 ```
 
 ## Read data
+
 ```{r,echo=TRUE}
 imdb_movie<-read_csv("data/imdb_movie.csv")
 boxo<-read_csv("data/imdb_Top800Movie_data.csv")
@@ -24,26 +26,9 @@ box1721<-read_csv("data/imdb_20172021boxoffice_data.csv")
 yearlybox<-read_csv("data/imdb_yearlyboxoffice.csv")
 ```
 
-## Time series to chase the trend of data：
+## In what ways has COVID-19 affected the film industry
 
-### Total Box Office Trend:
-
-```{r}
-yearlybox%>%
-  ggplot(aes(x=Year,y=Total))+
-    geom_line()+  
-  annotate("rect",xmin=2019,xmax=2020,ymin =2103088090 ,ymax = 11320803442,alpha = .3)+
-  annotate("text",x=2019,y =1500000000,label='2019-2020')+
-  labs(x="Date(Year)",
-       y="Total Box Office",
-       title="Time Series of overall Boxoffice")
-```
-
-Explanation of the graph:
- 
-Here, we want to explore the box office trends for each year from 1980 to 2021. As can be seen from the plot, the box office grew steadily from 1980 to 2020, but fell off a cliff in 2020, which may also be due to the impact of the epidemic on the film industry. Fewer films, fewer moviegoers and a large number of theater closures were among the main reasons for the decline. We can also see that the box office in 2020 dropped to the level of 1980, which shows that the epidemic has a huge impact on the film industry. 
-
-### Trend of Count with different genres :
+### Trend of Count for different genres :
 
 ```{r}
 top10<-imdb_movie%>%drop_na(startYear,g1)%>%group_by(g1)%>%summarise(count=n())%>%arrange(desc(count))%>%head(6)%>%pull(g1)
@@ -65,6 +50,22 @@ Explanation of the graph:
 
 Here, we want to find the time trends in the number of films in different types. From the plot of missing values, we can see the total number of documentary films has been almost consistently the highest in 20 years, while the number of adventure and crime films has been the lowest. This may be because documentaries are more popular in the market and cheaper to make. In addition, we can see that from 2020 to 2018, the number of films released in different categories increased steadily, but there was a relatively large decline in 2020, which is probably due to the impact of COVID-19 in 2019-2020, which caused the entire film industry to enter a winter period. Rising filming costs, falling cinema attendance, the absence of actors due to the pandemic and stringent controls in different countries are all important factors. However, we can also see new opportunities for the film industry in 2021, with an increase in the number of films of all types, which cannot be achieved without the effective control of the epidemic worldwide and the research and development of vaccines.
 
+### Total Box Office Trend:
+
+```{r}
+yearlybox%>%
+  ggplot(aes(x=Year,y=Total))+
+    geom_line()+  
+  annotate("rect",xmin=2019,xmax=2020,ymin =2103088090 ,ymax = 11320803442,alpha = .3)+
+  annotate("text",x=2019,y =1500000000,label='2019-2020')+
+  labs(x="Date(Year)",
+       y="Total Box Office",
+       title="Time Series of overall Boxoffice")
+```
+
+Explanation of the graph:
+ 
+Here, we explored the box office trends for each year from 1980 to 2021. As can be seen from the plot, the box office grew steadily from 1980 to 2019, but fell off a cliff in 2020, which may also be due to the impact of the epidemic on the film industry. Fewer films, fewer moviegoers and a large number of theater closures were among the main reasons for the decline. We can also see that the box office in 2020 dropped to the level of 1980, which shows that the epidemic has a huge impact on the film industry. 
 
 
 ### The Trend of Counts of Different Rating ：
@@ -86,8 +87,10 @@ imdb_movie%>%drop_na(averageRating)%>%
 
 Explanation of the graph:
 
-Here, we want to find whether the movie rating is related to the number of movies. From the line plot of films with different scores from 2020 to 2021, we can see all categories saw a decline in the number of films in 2020 because of the epidemic. Between 2000 and 2020, the total number of movies that scored more than 2 increased. Interestingly, the number of films with a score of less than 2 fluctuated more significantly during the 20 years, which may be due to the low public evaluation of low-scoring films, and the return on investment would change more sharply with different years, thus affecting the number of films released.
-
+The technology and the industry is becoming more mature, we can see IMAX movies today, 3D movies today compared to 100 years ago, we have a lot of the latest technology, but do we have more and more High quality movies?
+From the line plot of films with different scores from 2020 to 2021, we can see all categories saw a decline in the number of films in 2020 because of the epidemic. Between 2000 and 2020, the total number of movies that scored more than 2 increased. 
+Even without the influence of Covid-19, It seems like the number of 5 stars movie are decrease since 2017. In fact, Covid-19 might have positive influence on the quality of movies. After the first year of 2020, Only the number of five stars movies increased. Maybe because everyone is at home, there are fewer temptations and they can concentrate on making better script.
+Interestingly, the number of films with a score of less than 2 fluctuated more significantly during the 20 years, which may be due to the low public evaluation of low-scoring films, and the return on investment would change more sharply with different years, thus affecting the number of films released. 
 
 
 ## Finding the top-rated genres
@@ -127,8 +130,11 @@ vcd::mosaic(genres~startYear,imdb_mos,direction = c("v", "h"),rot_labels=c(30,0)
 ```
 
 Explanation of the graph:
+Does the genres people like to watch changing those days?
 
-Here, we want to explore whether there is a relationship between the release time of a film and the type of film. As shown in the figure, in six different years from 1990 to 2015, the proportion of films of each type is basically the same, so we can think that these two variables are independent of each other. We can also see that documentaries have increased significantly in the past 25 years, which may be due to the fact that it may take several years to shoot a documentary, and the improvement of filming technology and easier access to information are both reasons for this phenomenon.
+Here, we made this mosaic plot to explore whether there is a relationship between the release time of a film and the type of film. As shown in the figure, in six different years from 1990 to 2015, the proportion of films of each type is changing from 1990-2005,but pretty much the same after 2005. It seems like the film industry have found a "fixed proportion" for different Genres. 
+
+Documentaries have increased significantly in the past 25 years, which may be due to the fact that it may take several years to shoot a documentary, and the improvement of filming technology and easier access to information are both reasons for this phenomenon.
 
 ### Mosaic plot(2)
 
