@@ -1,7 +1,7 @@
 # Results
 
 ```{r, include=FALSE}
-knitr::opts_chunk$set(warning = FALSE, message = FALSE,echo=FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE,echo=TRUE)
 ```
 
 ## library
