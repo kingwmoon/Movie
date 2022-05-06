@@ -19,7 +19,7 @@ library(plotly)
 
 ## Read data
 
-```{r,echo=TRUE}
+```{r}
 imdb_movie<-read_csv("data/imdb_movie.csv")
 boxo<-read_csv("data/imdb_Top800Movie_data.csv")
 box1721<-read_csv("data/imdb_20172021boxoffice_data.csv")
@@ -98,7 +98,7 @@ Interestingly, the number of films with a score of less than 2 fluctuated more s
 ### Cleveland plot：
 
 ```{r}
-(imdb_averate_g_1<-imdb_movie%>%drop_na(g1,averageRating)%>%select(primaryTitle,averageRating,g1)%>%group_by(g1)%>%summarise(count_gen=n(),gen_ave=sum(averageRating)/count_gen))
+imdb_averate_g_1<-imdb_movie%>%drop_na(g1,averageRating)%>%select(primaryTitle,averageRating,g1)%>%group_by(g1)%>%summarise(count_gen=n(),gen_ave=sum(averageRating)/count_gen)
 imdb_averate_g_1%>%
   ggplot(aes(x=gen_ave,y=fct_reorder(g1, gen_ave)))+
   geom_point() +
