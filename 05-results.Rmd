@@ -1,12 +1,12 @@
 # Results
 
+
+
+## library
 ```{r, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE,echo=TRUE)
 ```
-
-## library
-
-```{r,echo=TRUE}
+```{r}
 library(bookdown)
 library(tidyverse)
 library(lubridate)
